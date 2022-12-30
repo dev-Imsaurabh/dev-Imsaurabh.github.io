@@ -1,0 +1,11 @@
+.postField::-webkit-scrollbar { 
+    display: none;  
+}
+
+.git{
+
+
+}
+.git:hover{
+    transform: scale(2);
+}

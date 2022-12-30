@@ -1,0 +1,38 @@
+{
+  "projects": [
+    {
+      "name": "OverStock.com - Clone",
+      "desc": "Overstock.com is a discount online shopping retailer. It offers a range of products including furniture, rugs, bedding, Kitchen appliances, cookware, home decor, housewares, outdoor decor products, garden and yard care products, lighting, gift items, kids' furniture, Kids' outdoor play products, kids' toys, exercising equipment and sporting goods.",
+      "image": ["https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock1.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock2.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock3.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock4.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock5.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock6.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock7.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock8.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock9.png?raw=true"],
+      "techStack": ["HTML","CSS","JavaScript","Local-Storage"],
+      "githubLink": "https://github.com/dev-Imsaurabh/light-deer-8425",
+      "deployedLink": "https://overstock-light-deer-8425.netlify.app/",
+      "projectType":"Individual",
+      "preview":"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/preview/os-preview.png?raw=true",
+      "video": "https://drive.google.com/file/d/1aNK9sBbtLSloFaQTXB0ge6xMnPFCs7E-/view?usp=share_link"
+    },
+    {
+      "name": "DeskTime.com - Clone",
+      "desc": "A time tracker with additional workforce management features that will help you develop a high-performing team that smashes goals every time.",
+      "image": ["https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/TimeAlways/ta1.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/TimeAlways/ta2.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/TimeAlways/ta3.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/TimeAlways/ta4.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/TimeAlways/ta1.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/TimeAlways/t6.png?raw=true"],
+      "techStack": ["HTML","CSS","JavaScript","Local-Storage","Json-Server","Render"],
+      "githubLink": "https://github.com/palabhi017/terrific-language-9890",
+      "deployedLink": "https://time-always.netlify.app/",
+      "video": "https://drive.google.com/file/d/17zJHI-NEe7sYJqN_7XRH1jzqR6-6s32A/view?usp=share_link",
+      "preview":"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/preview/ta-preview.png?raw=true",
+      "projectType":"Collaborative"
+
+    },
+    {
+      "name": "Shop.com - Clone",
+      "desc": "ZipShop.com Marketplace offers great deals on clothes, beauty, health and nutrition, shoes, electronics, and more from over 1500 stores with one easy checkout.",
+      "image": ["https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s1.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s2.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s3.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s4.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s5.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s6.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s7.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s8.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s9.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s10.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s11.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s12.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s14.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s15.png?raw=true"],
+      "techStack": ["React","JSX","CSS","Chakra UI","Json-Server"],
+      "githubLink": "https://github.com/dev-Imsaurabh/deep-scarecrow-1437",
+      "deployedLink": "https://shop-com-nine.vercel.app/",
+      "projectType":"Individual",
+      "preview":"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/preview/zs-preview.png?raw=true",
+      "video": "https://drive.google.com/file/d/1o511dbF1EK6Ux3HIv1PgLPvX_rVxSlWy/view?usp=share_link"
+    }
+  ]
+}
