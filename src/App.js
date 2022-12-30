@@ -25,7 +25,7 @@ function App() {
     <Box className="App" >
 
       {/* <Nav /> */}
-      <Flex direction={{base:"column",sm:"row" ,lg:"row"}} w={{base:"100%",lg:"85%"}} top={0} left={0} position={{base:"fixed"}} transform={"translate(calc(50vw - 50%), calc(50vh - 50%))"}  height="100%" >
+      <Flex direction={{base:"column",sm:"row" ,lg:"row"}} w={{base:"100%",lg:"85%"}} top={0} left={0} position={{base:"relative",lg:"fixed"}} transform={{lg:"translate(calc(50vw - 50%), calc(50vh - 50%))"}}  height="100%" >
       <SideNavbar />
       <PostField />
       <GitField />

@@ -47,10 +47,10 @@ let allSkill = skillList.map((el)=><SkillCard {...el}/>)
         <Flex flex='1' gap='4'  flexWrap='wrap'>
           <Avatar name='Saurabh Kumar' src={LOGO} border="1px solid white"/>
   
-          <HStack>
+          <VStack alignItems={"flex-start"}>
             <Heading textAlign={"left"} size='sm'>{MY_USERNAME}</Heading>
             <Text fontSize={"md"} color={"gray"}>{"@"+MY_POSITION}</Text>
-          </HStack>
+          </VStack>
         </Flex>
         <IconButton
           variant='ghost'
@@ -66,7 +66,7 @@ let allSkill = skillList.map((el)=><SkillCard {...el}/>)
        using these tools.
       </Text>
     </CardBody>
-    <Grid templateColumns="repeat(5,1fr)" gap={2} padding={2}>
+    <Grid templateColumns={{base:"repeat(4,1fr)",lg:"repeat(5,1fr)"}} gap={2} padding={2}>
         {allSkill}
 
     </Grid>
@@ -76,7 +76,7 @@ let allSkill = skillList.map((el)=><SkillCard {...el}/>)
       flexWrap='wrap'
       sx={{
         '& > button': {
-          minW: '136px',
+          minW: '13px',
         },
       }}
     >

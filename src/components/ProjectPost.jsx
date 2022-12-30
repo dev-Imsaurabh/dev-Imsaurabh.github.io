@@ -16,6 +16,7 @@ import {
   VStack,
   Badge,
   Wrap,
+  Stack,
 } from "@chakra-ui/react";
 import MyIcon from "./MyIcon";
 import dotMenu from "../assets/dotMenu.svg";
@@ -58,6 +59,7 @@ import {
   VSCODE_ICON,
 } from "../scripts/config";
 import SkillCard from "./SkillCard";
+import PhotoDrawer from "./PhotoDrawer";
 
 export default function ProjectPost({
   name,
@@ -74,7 +76,6 @@ export default function ProjectPost({
   const tech = techStack.map((el)=> <Badge colorScheme="green">{el}</Badge>)
 
 
-
   return (
     <Box>
       <Card
@@ -89,14 +90,14 @@ export default function ProjectPost({
             <Flex flex="1" gap="4" flexWrap="wrap">
               <Avatar name={MY_NAME} src={LOGO} border="1px solid white" />
 
-              <HStack>
+              <VStack alignItems={"flex-start"}>
                 <Heading textAlign={"left"} size="sm">
                   {MY_USERNAME}
                 </Heading>
                 <Text fontSize={"md"} color={"gray"}>
                   {"@" + MY_POSITION}
                 </Text>
-              </HStack>
+              </VStack>
             </Flex>
             <IconButton
               variant="ghost"
@@ -106,7 +107,9 @@ export default function ProjectPost({
             />
           </Flex>
 
+          <Stack alignItems={"flex-start"}>
           <Heading>{name}</Heading>
+          </Stack>
         </CardHeader>
         <CardBody>
           <Wrap>
@@ -123,9 +126,10 @@ export default function ProjectPost({
         <CardFooter
           justify="space-between"
           flexWrap="wrap"
+          gap={2}
           sx={{
             "& > button": {
-              minW: "136px",
+              minW: "80px",
             },
           }}
         >
@@ -133,7 +137,7 @@ export default function ProjectPost({
            onClick={()=>{
             window.open(deployedLink,"_blank")
           }}
-            gap={4}
+            gap={0}
             _active={{ bg: "transparent" }}
             _hover={{ bg: "transparent" }}
             justifyContent={"center"}
@@ -147,7 +151,7 @@ export default function ProjectPost({
            onClick={()=>{
             window.open(githubLink,"_blank")
           }}
-            gap={4}
+            gap={0}
             _active={{ bg: "transparent" }}
             _hover={{ bg: "transparent" }}
             justifyContent={"center"}
@@ -161,7 +165,7 @@ export default function ProjectPost({
            onClick={()=>{
             window.open(video,"_blank")
           }}
-            gap={4}
+            gap={0}
             _active={{ bg: "transparent" }}
             _hover={{ bg: "transparent" }}
             justifyContent={"center"}
@@ -171,20 +175,9 @@ export default function ProjectPost({
           >
             Video
           </Button>
-          <Button
-          onClick={()=>{
-            window.open()
-          }}
-            gap={4}
-            _active={{ bg: "transparent" }}
-            _hover={{ bg: "transparent" }}
-            justifyContent={"center"}
-            flex="1"
-            variant="ghost"
-            leftIcon={<MyIcon src={VIEW_ICON} size={6} rounded={true} />}
-          >
-            View
-          </Button>
+         
+         <PhotoDrawer images={image} />
+
         </CardFooter>
       </Card>
     </Box>

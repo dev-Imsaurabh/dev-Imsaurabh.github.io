@@ -6,8 +6,8 @@ import { CONTACT_ICON, HOME_ICON, LOGO, MY_RESUME, PROFILE_ICON, PROJECT_ICON, S
  export default function SideNavbar(){
 
 
-const navbars = [{name:"",icon:LOGO,rounded:true},{name:"Home",icon:HOME_ICON},{name:"About Me",icon:PROFILE_ICON},{name:"Skills",icon:SKILL_ICON},{name:"Project",icon:PROJECT_ICON},{name:"Contact",icon:CONTACT_ICON}]
-  let navItems = navbars.map((el,i)=><Button _hover={{bg:el.rounded?"transparent":"#2D3748"}} borderRadius="100px" fontSize={18} fontWeight="bold" padding={6} justifyContent="flex-start" textAlign="left"  leftIcon={<MyIcon src={el.icon} rounded={el.rounded} size={6}></MyIcon>} bg="transparent" color="white" variant='solid'>
+const navbars = [{name:"",icon:LOGO,rounded:true,rounded1:true},{name:"Home",icon:HOME_ICON},{name:"About Me",icon:PROFILE_ICON},{name:"Skills",icon:SKILL_ICON},{name:"Project",icon:PROJECT_ICON},{name:"Contact",icon:CONTACT_ICON}]
+  let navItems = navbars.map((el,i)=><Button _active={{bg:i==0?"transparent":"#2D3748"}} _hover={{bg:i==0?"transparent":"#2D3748"}} borderRadius="100px" fontSize={18} fontWeight="bold" padding={6} justifyContent="flex-start" textAlign="left"  leftIcon={<MyIcon src={el.icon} rounded={el.rounded} rounded1={el.rounded1} size={6}></MyIcon>} bg="transparent" color="white" variant='solid'>
   {el.name}
 </Button>)
 
