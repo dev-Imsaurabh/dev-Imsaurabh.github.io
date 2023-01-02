@@ -12,7 +12,7 @@ export default function GitField(){
   
 
     return <Flex w={{base:"100%",lg:"30%"}}  overflow="scroll" direction="column" className="postField" padding={4}>
-       <VStack>
+       <VStack position={{lg:"relative",sm:"fixed"}} >
         <TabHeading content={"#Trending on my GitHub"} size={"md"} />
        <Image src={GITHUB_STATS_1} width="100%" borderRadius={10} bg={"gray"}/>
        <Image src={GITHUB_STATS_2} width="100%" borderRadius={10} bg={"gray"}/>

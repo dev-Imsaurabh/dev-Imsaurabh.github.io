@@ -8,6 +8,7 @@ import retweetIcon from "../assets/retweetIcon.svg"
 import commentIcon from "../assets/commentIcon.svg"
 import heartIcon from "../assets/heartIcon.svg"
 import shareIcon from "../assets/shareIcon.svg"
+import resumeIcon from "../assets/resumeIcon.svg"
 
 //Icons
 export const LOGO = logo
@@ -21,9 +22,31 @@ export const RETWEET_ICON = retweetIcon
 export const HEART_ICON = heartIcon
 export const SHARE_ICON = shareIcon
 export const COMMENT_ICON = commentIcon
+export const RESUME_ICON = resumeIcon
 export const VIDEO_ICON="https://cdn-icons-png.flaticon.com/512/2504/2504965.png"
 export const VIEW_ICON="https://cdn-icons-png.flaticon.com/512/2235/2235419.png"
 export const GITHUB_ICON="https://cdn-icons-png.flaticon.com/128/2504/2504911.png"
+
+
+//NavBarTabs
+
+export const HOME_TAB="Home"
+export const ABOUT_ME_TAB="About Me"
+export const SKILLS_TAB="Skills"
+export const PROJECTS_TAB="Projects"
+export const CONTACT_TAB="Contact"
+export const RESUME_TAB="Resume"
+
+//NavTabsIDs
+
+export const HOME_TAB_ID="home"
+export const ABOUT_ME_TAB_ID="aboutme"
+export const SKILLS_TAB_ID="skills"
+export const PROJECTS_TAB_ID="projects"
+export const CONTACT_TAB_ID="contact"
+export const RESUME_TAB_ID="resume"
+
+
 
 
 //SkillIcons
@@ -60,7 +83,7 @@ export const REPLIT_ICON="https://avatars.githubusercontent.com/u/983194?s=200&v
 
 //MyProfileInfo
 export const MY_PIC = "https://media.licdn.com/dms/image/D4D03AQGWQPwfnrQH3w/profile-displayphoto-shrink_400_400/0/1672306627471?e=1677715200&v=beta&t=mHkWKes7J_9_mn7LJxWzZY4YgSG_SMxDQT0Hiuh-1fE"
-export const MY_BANNER_PIC ="https://media.licdn.com/dms/image/D4D16AQFC7nYLGfCE8A/profile-displaybackgroundimage-shrink_350_1400/0/1672307264463?e=1677715200&v=beta&t=xQpNzOUfKUP8YKaDXf0GIzLaaFg1hqGICpJXey9fHc0"
+export const MY_BANNER_PIC ="https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/banner/banner1.png?raw=true"
 export const MY_NAME="Saurabh Kumar"
 export const MY_POSITION = "FullStack Web Developer"
 export const MY_USERNAME= "dev.imsaurabh"
@@ -71,7 +94,7 @@ export const MY_RESUME="https://drive.google.com/file/d/1vhOrWvGqdCA9NHk8qL77O99
 
 
 //Github
-export const GITHUB_USERNAME="dev-Imsaurabh"
+export const GITHUB_USERNAME="dev-Imsaurabh" //change only GitHub username to use my portfolio
 export const GITHUB_FOLLOWERS_URL= `https://api.github.com/users/${GITHUB_USERNAME}/followers`
 export const GITHUB_FOLLOWING_URL= `https://api.github.com/users/${GITHUB_USERNAME}/followers`
 export const GITHUB_REPO_COUNT =`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`

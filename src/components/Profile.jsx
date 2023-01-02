@@ -12,8 +12,9 @@ import {
     Badge,
     HStack
   } from '@chakra-ui/react';
-import { useEffect, useState } from 'react';
-import { ABOUT_ME, GITHUB_FOLLOWERS_URL, GITHUB_REPO_COUNT, MY_BANNER_PIC, MY_NAME, MY_PIC, MY_POSITION } from '../scripts/config';
+import { useContext, useEffect, useRef, useState } from 'react';
+import { ScrollContext } from '../contexts/ScrollContext';
+import { ABOUT_ME, ABOUT_ME_TAB_ID, GITHUB_FOLLOWERS_URL, GITHUB_REPO_COUNT, HOME_TAB_ID, MY_BANNER_PIC, MY_NAME, MY_PIC, MY_POSITION, MY_RESUME } from '../scripts/config';
 import TabHeading from './TabHeading';
 
 const getRepoCount =async()=>{
@@ -24,6 +25,9 @@ const getRepoCount =async()=>{
 }  
   export default function Profile() {   
     const [repoCount,setRepoCount] = useState(0)
+    const {page} = useContext(ScrollContext)
+    const homeRef = useRef(null)
+    const aboutmeRef = useRef(null)
 
     useEffect(()=>{
 
@@ -34,8 +38,20 @@ const getRepoCount =async()=>{
 
     },[])
 
+    useEffect(()=>{
+
+      if(page==HOME_TAB_ID){
+        homeRef.current.scrollIntoView({ behavior: 'smooth' })
+     }else if(page==ABOUT_ME_TAB_ID){
+        aboutmeRef.current.scrollIntoView({ behavior: 'smooth' })
+
+     }
+
+    },[page])
+
     return (
         <Box
+        ref={homeRef}
           w={'full'}
           bg={useColorModeValue('white', 'gray.800')}
           boxShadow={'2xl'}
@@ -48,7 +64,7 @@ const getRepoCount =async()=>{
             }
             objectFit={'cover'}
           />
-          <Flex mt={-12}>
+          <Flex width={"100%"} mt={-12} justify={"space-between"}>
             <Avatar
               size={'2xl'}
               src={
@@ -59,8 +75,35 @@ const getRepoCount =async()=>{
                 border: '2px solid white',
                 marginLeft:"16px"
               }}
+              
             />
+            <Button
+        fontSize={16}           
+             rounded={'full'}
+                bg={'blue.400'}
+                color={'white'}
+                display={{base:"block",sm:'block',lg:"none"}}
+               
+                style={{WebkitTapHighlightColor:"transparent"}}
+                mt={16} mr={2}
+                boxShadow={
+                  '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
+                }
+                _hover={{
+                  bg: 'blue.500',
+                }}
+                
+                _focus={{
+                  bg: 'blue.500',
+                  
+                }}>
+               <a href={MY_RESUME}>Resume</a>
+              </Button>
+       
+
+
           </Flex>
+
 
   
           <Box p={6}>
@@ -116,13 +159,13 @@ const getRepoCount =async()=>{
               </Badge>
             </Stack>
             
-            <Stack alignItems={"flex-start"}>
+            <Stack ref={aboutmeRef} alignItems={"flex-start"}>
             <TabHeading content={"About Me"} size={"md"}/>
 
             </Stack>
             <Stack alignItems={"flex-start"}>
 
-            <Text textAlign={"left"}>{ABOUT_ME}</Text>
+            <Text  textAlign={"left"}>{ABOUT_ME}</Text>
 
             </Stack>
 

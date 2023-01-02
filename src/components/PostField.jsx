@@ -5,18 +5,35 @@ import Profile from "./Profile";
 import TabHeading from "./TabHeading";
 import ProjectPost from "./ProjectPost";
 import db from "../db.json"
+import { useContext, useEffect, useRef } from "react";
+import { ScrollContext } from "../contexts/ScrollContext";
+import { PROJECTS_TAB_ID, SKILLS_TAB_ID } from "../scripts/config";
 
 export default function PostField(){
 
+   const {page} = useContext(ScrollContext)
+   const projectRef = useRef(null)
+   const skillsRef = useRef(null)
     let projects = db.projects.map((el)=><ProjectPost {...el} />)
 
+    useEffect(()=>{
 
-    return <Flex w={{base:"100%",lg:"45%"}} overflow="scroll" className="postField"  direction="column" borderRight="1px solid white" borderLeft="1px solid white" gap={8}>
+     if(page==PROJECTS_TAB_ID){
+        projectRef.current.scrollIntoView({ behavior: 'smooth'})
+     }else if(page==SKILLS_TAB_ID){
+        skillsRef.current.scrollIntoView({ behavior: 'smooth' })
 
-        <Profile />
-        <Stack alignItems={"flex-start"} margin="8px"><TabHeading content={"Skills"}  size={"2xl"}/></Stack>
+     }
+        
+    },[page])
+
+    console.log(page)
+    return <Flex w={{base:"100%",lg:"45%"}} overflow="scroll" className="postField"  direction="column" borderRight={{base:"",lg:"1px solid white",sm:"1px solid white"}} borderLeft={{base:"",lg:"1px solid white",sm:"1px solid white"}}  gap={8}>
+
+        <Profile/>
+        <Stack ref={skillsRef} alignItems={"flex-start"} margin="8px"><TabHeading content={"Skills"}  size={"2xl"}/></Stack>
         <SkillPost />
-        <Stack alignItems={"flex-start"} margin="8px"><TabHeading content={"Projects"}  size={"2xl"}/></Stack>
+        <Stack ref={projectRef} alignItems={"flex-start"} margin="8px"><TabHeading  content={"Projects"}  size={"2xl"}/></Stack>
         {projects}       
 
     </Flex>

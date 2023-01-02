@@ -49,7 +49,7 @@ let allSkill = skillList.map((el)=><SkillCard {...el}/>)
   
           <VStack alignItems={"flex-start"}>
             <Heading textAlign={"left"} size='sm'>{MY_USERNAME}</Heading>
-            <Text fontSize={"md"} color={"gray"}>{"@"+MY_POSITION}</Text>
+            <Text fontSize={"md"} color={"gray"}>{"@"+MY_POSITION.replace(" ","_")}</Text>
           </VStack>
         </Flex>
         <IconButton

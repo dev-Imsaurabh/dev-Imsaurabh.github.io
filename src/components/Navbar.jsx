@@ -1,4 +1,4 @@
-import { ReactNode } from 'react';
+import { ReactNode, useContext } from 'react';
 import {
   Box,
   Flex,
@@ -17,36 +17,37 @@ import {
   Image,
   useColorMode,
   Center,
+  Wrap,
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import logo from "../assets/SK.svg"
 import darkLogo from "../assets/darkLogo.svg"
+import { ABOUT_ME, ABOUT_ME_TAB_ID, CONTACT_ICON, CONTACT_TAB, CONTACT_TAB_ID, HOME_ICON, HOME_TAB_ID, PROFILE_ICON, PROJECTS_TAB, PROJECTS_TAB_ID, PROJECT_ICON, RESUME_ICON, RESUME_TAB_ID, SKILLS_TAB, SKILLS_TAB_ID, SKILL_ICON } from '../scripts/config';
+import MyIcon from './MyIcon';
+import { ScrollContext } from '../contexts/ScrollContext';
 
 
 
 export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const navbars = ["Home","About Me","Skills","Project","Contact"]
-  let navItems = navbars.map((el)=> <Heading cursor="pointer" as='h4' size='md' _hover={{color:"red"}}>
-  {el}
-</Heading>)
+  const {handlePage} = useContext(ScrollContext)
+  const navbars = [HOME_ICON,PROFILE_ICON,SKILL_ICON,PROJECT_ICON,CONTACT_ICON,RESUME_ICON]
+  const navState = [HOME_TAB_ID,ABOUT_ME_TAB_ID,SKILLS_TAB_ID,PROJECTS_TAB_ID,CONTACT_TAB_ID,RESUME_TAB_ID]
+  let navItems = navbars.map((el,i)=> <Wrap onClick={()=>{
+    handlePage(navState[i])
+  }}><MyIcon src={el} size={6}>
+  </MyIcon></Wrap>)
 
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
-        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box><Image src={colorMode=="light"?darkLogo:logo} w="60px"/></Box>
+      <Flex padding={2}  width={"90%"}  borderRadius={20} border={"0.5px solid white"} justifyContent={"center"} display={{base:"block",sm:'block',lg:"none"}} alignItems={"center"} transform="translate(-50%,-50%)" position={"fixed"} bottom={"-5"} left="50%" bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+        
 
-          <Flex alignItems={'center'} gap={7}>
+          <Flex alignItems={'center'} justify={"space-between"} gap={2} padding={4}>
             {navItems}
-              <Button onClick={toggleColorMode}>
-                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
-              </Button>
-
           </Flex>
-        </Flex>
-      </Box>
+      </Flex>
     </>
   );
 }

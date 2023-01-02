@@ -40,7 +40,7 @@ export default function PhotoDrawer({images}) {
        
         <Drawer
           isOpen={isOpen}
-          placement='bottom'
+          placement='top'
           onClose={onClose}
           size={"full"}
           finalFocusRef={btnRef}
