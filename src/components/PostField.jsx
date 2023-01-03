@@ -28,7 +28,7 @@ export default function PostField(){
     },[page])
 
     console.log(page)
-    return <Flex w={{base:"100%",lg:"45%"}} overflow="scroll" className="postField"  direction="column" borderRight={{base:"",lg:"1px solid white",sm:"1px solid white"}} borderLeft={{base:"",lg:"1px solid white",sm:"1px solid white"}}  gap={8}>
+    return <Flex w={{base:"100%",lg:"45%"}} overflow="scroll" className="postField"  direction="column" borderRight={{base:"",lg:"0.4px solid gray",sm:"0.4px solid gray"}} borderLeft={{base:"",lg:"0.4px solid gray",sm:"0.2px solid gray"}}>
 
         <Profile/>
         <Stack ref={skillsRef} alignItems={"flex-start"} margin="8px"><TabHeading content={"Skills"}  size={"2xl"}/></Stack>

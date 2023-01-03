@@ -16,7 +16,7 @@ import { LINKEDIN, LOGO } from "../scripts/config";
 
 export default function ProfileBadge() {
   return (
-    <Flex w="100%" justify="space-between" gap={4} alignItems="center">
+    <Flex w="100%"  justify="space-between" gap={4} alignItems="center">
       <HStack gap={4}>
         <MyIcon src={LOGO} size={6} rounded={true} rounded1={true} />
         <VStack alignItems="flex-start">

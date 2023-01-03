@@ -7,7 +7,7 @@ export default function SkillCard({name,link}){
         <CardBody>
             <VStack>
             <MyIcon src ={link} size={8} />
-            <Text  noOfLines={1}>{name}</Text>
+            <Text  fontSize={"sm"} noOfLines={1}>{name}</Text>
             </VStack>
         </CardBody>
     </Card>

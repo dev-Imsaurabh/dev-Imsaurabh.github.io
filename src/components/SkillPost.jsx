@@ -1,8 +1,10 @@
 import { Card, CardHeader, CardBody, CardFooter,IconButton ,Flex,Avatar,Heading,Box,Text,Image,Button, HStack, Grid, VStack} from '@chakra-ui/react'
 import MyIcon from './MyIcon'
 import dotMenu from "../assets/dotMenu.svg"
-import {  ANDROID_STUDIO_ICON, CHAKRA_UI_ICON, CODE_PEN, CODE_SAND_ICON, COMMENT_ICON, CSS_ICON, EXPRESS_ICON, FIREBASE_ICON, GIT_ICON, HEART_ICON, HTML_ICON, JAVASCRIPT_ICON, JAVA_ICON, KOTLIN_ICON, LOGO, MONGO_ICON, MYSQL_ICON, MY_NAME, MY_POSITION, MY_USERNAME, NETLIFY_ICON, NODE_ICON, PHP_ICON, REACT_ICON, REDUX_ICON, RENDER_ICON, REPLIT_ICON, RETWEET_ICON, SHARE_ICON, SUBLIME_ICON, TYPESCRIPT_ICON, VERCEL_ICON, VSCODE_ICON } from '../scripts/config'
+import {  ANDROID_STUDIO_ICON, CHAKRA_UI_ICON, CODE_PEN, CODE_SAND_ICON, COMMENT_ICON, CSS_ICON, EXPRESS_ICON, FIREBASE_ICON, GIT_ICON, HEART_ICON, HTML_ICON, JAVASCRIPT_ICON, JAVA_ICON, KOTLIN_ICON, LOGO, MONGO_ICON, MYSQL_ICON, MY_NAME, MY_POSITION, MY_POSITION_ID, MY_USERNAME, NETLIFY_ICON, NODE_ICON, PHP_ICON, REACT_ICON, REDUX_ICON, RENDER_ICON, REPLIT_ICON, RETWEET_ICON, SHARE_ICON, SKILL_CAPTION, SUBLIME_ICON, TYPESCRIPT_ICON, VERCEL_ICON, VSCODE_ICON } from '../scripts/config'
 import SkillCard from './SkillCard'
+import ButtonPanel from './ButtonPanel'
+import ResizeableText from './ResizableText'
 
 
 export default function SkillPost(){
@@ -40,8 +42,8 @@ export default function SkillPost(){
 let allSkill = skillList.map((el)=><SkillCard {...el}/>)
 
 
-    return <Box>
-        <Card w={"full"} borderRadius={0}  bg="transparent" borderTop="1px solid white" borderBottom="1px solid white">
+    return <Box  _hover={{bg:"#002D3748"}}>
+        <Card w={"full"} borderRadius={0}  bg="transparent" borderTop="0.4px solid gray" borderBottom="0.4px solid gray">
     <CardHeader>
       <Flex spacing='4'>
         <Flex flex='1' gap='4'  flexWrap='wrap'>
@@ -49,7 +51,7 @@ let allSkill = skillList.map((el)=><SkillCard {...el}/>)
   
           <VStack alignItems={"flex-start"}>
             <Heading textAlign={"left"} size='sm'>{MY_USERNAME}</Heading>
-            <Text fontSize={"md"} color={"gray"}>{"@"+MY_POSITION.replace(" ","_")}</Text>
+            <Text fontSize={"md"} color={"gray"}>{MY_POSITION_ID}</Text>
           </VStack>
         </Flex>
         <IconButton
@@ -61,12 +63,9 @@ let allSkill = skillList.map((el)=><SkillCard {...el}/>)
       </Flex>
     </CardHeader>
     <CardBody>
-      <Text textAlign={"left"}>
-       Hi stranger, I am happy to share that i have gained this much of skills and done so many projects
-       using these tools.
-      </Text>
+      <ResizeableText text ={SKILL_CAPTION}/>
     </CardBody>
-    <Grid templateColumns={{base:"repeat(4,1fr)",lg:"repeat(5,1fr)"}} gap={2} padding={2}>
+    <Grid m="auto"  borderRadius={20} width={"90%"} style={{boxShadow:"0px 3px 6px 6px rgba(180,234,255,0.16),0px 3px 6px 0px rgba(0,0,0,0.23)"}} templateColumns={{base:"repeat(4,1fr)",lg:"repeat(5,1fr)"}} gap={2} padding={2}>
         {allSkill}
 
     </Grid>
@@ -80,18 +79,7 @@ let allSkill = skillList.map((el)=><SkillCard {...el}/>)
         },
       }}
     >
-      <Button _hover={{bg:"transparent"}} justifyContent={"center"}  flex='1' variant='ghost' leftIcon={<MyIcon src={COMMENT_ICON} size={6}  />} >
-        
-      </Button>
-      <Button  _hover={{bg:"transparent"}} justifyContent={"center"} flex='1' variant='ghost' leftIcon={<MyIcon src={RETWEET_ICON} size={6} />} >
-        
-      </Button>
-      <Button  _hover={{bg:"transparent"}} justifyContent={"center"} flex='1' variant='ghost' leftIcon={<MyIcon src={HEART_ICON} size={6} />} >
-        
-      </Button>
-      <Button  _hover={{bg:"transparent"}} justifyContent={"center"} flex='1' variant='ghost' leftIcon={<MyIcon src={SHARE_ICON} size={6} />}>
-        
-      </Button>
+      <ButtonPanel />
     </CardFooter>
   </Card>
     </Box>

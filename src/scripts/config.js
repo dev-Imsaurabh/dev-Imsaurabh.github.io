@@ -9,10 +9,14 @@ import commentIcon from "../assets/commentIcon.svg"
 import heartIcon from "../assets/heartIcon.svg"
 import shareIcon from "../assets/shareIcon.svg"
 import resumeIcon from "../assets/resumeIcon.svg"
+import emailIcon from "../assets/emailIcon.svg"
+import phoneIcon from "../assets/phoneIcon.svg"
+import locationIcon from "../assets/locationIcon.svg"
+import analyticsIcon from "../assets/analyticsIcon.svg"
+import githubIcon from "../assets/githubIcon.png"
 
 //Icons
 export const LOGO = logo
-export const LINKEDIN= "https://www.linkedin.com/in/dev-saurabh-kumar/"
 export const HOME_ICON = homeIcon
 export const PROFILE_ICON = profileIcon
 export const SKILL_ICON = skillIcon
@@ -26,6 +30,14 @@ export const RESUME_ICON = resumeIcon
 export const VIDEO_ICON="https://cdn-icons-png.flaticon.com/512/2504/2504965.png"
 export const VIEW_ICON="https://cdn-icons-png.flaticon.com/512/2235/2235419.png"
 export const GITHUB_ICON="https://cdn-icons-png.flaticon.com/128/2504/2504911.png"
+export const PHONE_ICON = phoneIcon
+export const PHONE_COLOR_ICON = "https://cdn-icons-png.flaticon.com/512/724/724664.png"
+export const LOCATION_ICON = locationIcon
+export const LINKEDIN_COLOR_ICON ="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+export const GITHUB_COLOR_ICON =githubIcon
+export const EMAIL_COLOR_ICON ="https://cdn-icons-png.flaticon.com/512/9068/9068642.png"
+export const EMAIL_ICON = emailIcon
+export const ANALYTICS_ICON=analyticsIcon
 
 
 //NavBarTabs
@@ -86,15 +98,22 @@ export const MY_PIC = "https://media.licdn.com/dms/image/D4D03AQGWQPwfnrQH3w/pro
 export const MY_BANNER_PIC ="https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/banner/banner1.png?raw=true"
 export const MY_NAME="Saurabh Kumar"
 export const MY_POSITION = "FullStack Web Developer"
+export const MY_POSITION_ID = "@FullStack_Web_Developer"
 export const MY_USERNAME= "dev.imsaurabh"
 export const ABOUT_ME="Hi 👋 there, my name is Saurabh Kumar and I am a passionate FullStack web developer. I am constantly learning and striving to improve my skills in order to deliver the best solutions for my clients. With a strong foundation in both front-end and back-end development, I am comfortable working on projects of all sizes and complexities. Whether you need a new website or want to update your existing online presence, I am here to help bring your vision to life. Thank you for visiting my website, I look forward to working with you! "
 export const MY_RESUME="https://drive.google.com/file/d/1vhOrWvGqdCA9NHk8qL77O99A3C2qZnf7/view"
+export const MY_PHONENUMBER="+916393567935"
+export const MY_EMAIL="sau4478@gmail.com"
+export const LINKEDIN= "https://www.linkedin.com/in/dev-saurabh-kumar/"
+export const MY_LOCATION="Varanasi, Uttar Pradesh"
+export const SKILL_CAPTION="Hi stranger, I am happy to share that i have gained this much of skills and done so many projects using these tools."
 
 
 
 
 //Github
 export const GITHUB_USERNAME="dev-Imsaurabh" //change only GitHub username to use my portfolio
+export const GITHUB_PROFILE_LINK=`https://github.com/${GITHUB_USERNAME}`
 export const GITHUB_FOLLOWERS_URL= `https://api.github.com/users/${GITHUB_USERNAME}/followers`
 export const GITHUB_FOLLOWING_URL= `https://api.github.com/users/${GITHUB_USERNAME}/followers`
 export const GITHUB_REPO_COUNT =`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`

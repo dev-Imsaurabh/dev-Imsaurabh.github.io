@@ -10,11 +10,14 @@ import {
     Button,
     useColorModeValue,
     Badge,
-    HStack
+    HStack,
+    Wrap,
+    VStack
   } from '@chakra-ui/react';
 import { useContext, useEffect, useRef, useState } from 'react';
 import { ScrollContext } from '../contexts/ScrollContext';
-import { ABOUT_ME, ABOUT_ME_TAB_ID, GITHUB_FOLLOWERS_URL, GITHUB_REPO_COUNT, HOME_TAB_ID, MY_BANNER_PIC, MY_NAME, MY_PIC, MY_POSITION, MY_RESUME } from '../scripts/config';
+import { ABOUT_ME, ABOUT_ME_TAB_ID, EMAIL_ICON, GITHUB_FOLLOWERS_URL, GITHUB_REPO_COUNT, HOME_TAB_ID, LOCATION_ICON, MY_BANNER_PIC, MY_EMAIL, MY_LOCATION, MY_NAME, MY_PHONENUMBER, MY_PIC, MY_POSITION, MY_RESUME, PHONE_ICON } from '../scripts/config';
+import MyIcon from './MyIcon';
 import TabHeading from './TabHeading';
 
 const getRepoCount =async()=>{
@@ -77,15 +80,18 @@ const getRepoCount =async()=>{
               }}
               
             />
-            <Button
+
+            <VStack
+             display={{base:"block",sm:'block',lg:"none"}}
+               
+             style={{WebkitTapHighlightColor:"transparent"}}
+             mt={16} mr={2}>
+     <Button
         fontSize={16}           
              rounded={'full'}
                 bg={'blue.400'}
                 color={'white'}
-                display={{base:"block",sm:'block',lg:"none"}}
                
-                style={{WebkitTapHighlightColor:"transparent"}}
-                mt={16} mr={2}
                 boxShadow={
                   '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
                 }
@@ -99,6 +105,10 @@ const getRepoCount =async()=>{
                 }}>
                <a href={MY_RESUME}>Resume</a>
               </Button>
+              
+            </VStack>
+       
+       
        
 
 
@@ -115,6 +125,11 @@ const getRepoCount =async()=>{
               <Text color={'gray.500'}>{MY_POSITION}</Text>
             </Stack>
 
+            <Wrap>
+              <HStack><MyIcon src={LOCATION_ICON} size={4}/><Text fontSize={"sm"}>{MY_LOCATION}</Text></HStack>
+              <HStack><MyIcon src={EMAIL_ICON} size={4}/><Text fontSize={"sm"}>{MY_EMAIL}</Text></HStack>
+              <HStack><MyIcon src={PHONE_ICON} size={4}/><Text fontSize={"sm"}>{MY_PHONENUMBER}</Text></HStack>
+            </Wrap>
          
 
             <Stack alignItems={'flex-start'} direction={'row'} mt={6}>

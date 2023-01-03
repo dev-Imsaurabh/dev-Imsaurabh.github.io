@@ -28,12 +28,15 @@ export default function PhotoDrawer({images}) {
 
             gap={0}
             onClick={onOpen}
+            fontSize={"sm"}
+
             _active={{ bg: "transparent" }}
+            style={{WebkitTapHighlightColor:"transparent"}}
             _hover={{ bg: "transparent" }}
             justifyContent={"center"}
             flex="1"
             variant="ghost"
-            leftIcon={<MyIcon src={VIEW_ICON} size={6} rounded={true} />}
+            leftIcon={<MyIcon src={VIEW_ICON} size={4} rounded={true} />}
           >
             View
           </Button>
@@ -42,6 +45,7 @@ export default function PhotoDrawer({images}) {
           isOpen={isOpen}
           placement='top'
           onClose={onClose}
+          allowPinchZoom
           size={"full"}
           finalFocusRef={btnRef}
         >

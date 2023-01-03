@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Box, Button, Flex, useColorMode} from "@chakra-ui/react"
+import {Box, Button, Flex, useColorMode, useColorModeValue} from "@chakra-ui/react"
 import Nav from './components/Navbar';
 import AboutMe from './contents/AboutMe';
 import SideNavbar from './components/SideNavbar';
