@@ -12,7 +12,7 @@ import {
   MenuOptionGroup,
   MenuDivider,
 } from "@chakra-ui/react";
-import { LINKEDIN, LOGO } from "../scripts/config";
+import { GITHUB_PROFILE_LINK, LINKEDIN, LOGO, MY_RESUME_PDF, MY_RESUME_PDF_FILE_NAME } from "../scripts/config";
 
 export default function ProfileBadge() {
   return (
@@ -39,8 +39,8 @@ export default function ProfileBadge() {
           icon={<MyIcon src={dotMenu} size={4} />}
         ></MenuButton>
         <MenuList>
-          <MenuItem>Github</MenuItem>
-          <MenuItem>Resume</MenuItem>
+          <MenuItem onClick={()=>window.open(GITHUB_PROFILE_LINK)}>Github</MenuItem>
+          <MenuItem><a href={MY_RESUME_PDF} download={MY_RESUME_PDF_FILE_NAME}>Download Resume</a></MenuItem>
         </MenuList>
       </Menu>
     </Flex>

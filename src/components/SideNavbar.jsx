@@ -15,6 +15,7 @@ import {
   PROJECT_ICON,
   SKILLS_TAB,
   SKILL_ICON,
+  VIEW_ICON_SVG,
 } from "../scripts/config";
 import { useContext, useState } from "react";
 import { ScrollContext } from "../contexts/ScrollContext";
@@ -90,8 +91,12 @@ export default function SideNavbar() {
         fontSize={16}
         rounded={"full"}
         bg={"blue.400"}
+        rightIcon={<MyIcon src={VIEW_ICON_SVG} size={6} />}
         color={"white"}
         padding={6}
+        onClick={()=>{
+          window.open(MY_RESUME)
+        }}
         boxShadow={
           "0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)"
         }
@@ -102,10 +107,10 @@ export default function SideNavbar() {
           bg: "blue.500",
         }}
       >
-        <a href={MY_RESUME}>Resume</a>
+        Resume
       </Button>
    
-      <ConatctButtonPanel />
+      <ConatctButtonPanel size={8} mt={"16px"} direction={"row"} />
       <ProfileBadge />
      
     </VStack>

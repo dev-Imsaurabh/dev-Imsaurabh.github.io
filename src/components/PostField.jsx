@@ -1,4 +1,4 @@
-import { Flex, Image, Stack } from "@chakra-ui/react";
+import { Flex, Image, Stack, VStack } from "@chakra-ui/react";
 import "./cstyle.css"
 import SkillPost from "./SkillPost";
 import Profile from "./Profile";
@@ -8,6 +8,8 @@ import db from "../db.json"
 import { useContext, useEffect, useRef } from "react";
 import { ScrollContext } from "../contexts/ScrollContext";
 import { PROJECTS_TAB_ID, SKILLS_TAB_ID } from "../scripts/config";
+import ConatctButtonPanel from "./ContactButtonPanel";
+import ContactForm from "./ContactForm";
 
 export default function PostField(){
 
@@ -35,6 +37,13 @@ export default function PostField(){
         <SkillPost />
         <Stack ref={projectRef} alignItems={"flex-start"} margin="8px"><TabHeading  content={"Projects"}  size={"2xl"}/></Stack>
         {projects}       
+        <VStack position={"fixed"} display={{base:"block",sm:'block',lg:"none"}} zIndex={100}  right={0} bottom={100} >
+         <ConatctButtonPanel direction={"column"}  size={7}/>
+
+        </VStack>
+
+        <ContactForm />
+
 
     </Flex>
 

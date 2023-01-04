@@ -16,7 +16,8 @@ import {
   } from '@chakra-ui/react';
 import { useContext, useEffect, useRef, useState } from 'react';
 import { ScrollContext } from '../contexts/ScrollContext';
-import { ABOUT_ME, ABOUT_ME_TAB_ID, EMAIL_ICON, GITHUB_FOLLOWERS_URL, GITHUB_REPO_COUNT, HOME_TAB_ID, LOCATION_ICON, MY_BANNER_PIC, MY_EMAIL, MY_LOCATION, MY_NAME, MY_PHONENUMBER, MY_PIC, MY_POSITION, MY_RESUME, PHONE_ICON } from '../scripts/config';
+import { ABOUT_ME, ABOUT_ME_TAB_ID, DOWNLOAD_ICON, EMAIL_ICON, GITHUB_FOLLOWERS_URL, GITHUB_REPO_COUNT, HOME_TAB_ID, LOCATION_ICON, MY_BANNER_PIC, MY_EMAIL, MY_LOCATION, MY_NAME, MY_PHONENUMBER, MY_PIC, MY_POSITION, MY_RESUME, MY_RESUME_PDF, MY_RESUME_PDF_FILE_NAME, PHONE_ICON } from '../scripts/config';
+import ConatctButtonPanel from './ContactButtonPanel';
 import MyIcon from './MyIcon';
 import TabHeading from './TabHeading';
 
@@ -52,6 +53,8 @@ const getRepoCount =async()=>{
 
     },[page])
 
+    const download =  useRef()
+
     return (
         <Box
         ref={homeRef}
@@ -82,8 +85,7 @@ const getRepoCount =async()=>{
             />
 
             <VStack
-             display={{base:"block",sm:'block',lg:"none"}}
-               
+            //  display={{base:"block",sm:'block',lg:"none"}}  
              style={{WebkitTapHighlightColor:"transparent"}}
              mt={16} mr={2}>
      <Button
@@ -91,7 +93,8 @@ const getRepoCount =async()=>{
              rounded={'full'}
                 bg={'blue.400'}
                 color={'white'}
-               
+                onClick={()=>download.current.click()}
+                rightIcon={<MyIcon src={DOWNLOAD_ICON} size={4}/>}
                 boxShadow={
                   '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
                 }
@@ -103,10 +106,11 @@ const getRepoCount =async()=>{
                   bg: 'blue.500',
                   
                 }}>
-               <a href={MY_RESUME}>Resume</a>
+               <a ref={download} href={MY_RESUME_PDF} download={MY_RESUME_PDF_FILE_NAME}>Download Resume</a>
               </Button>
               
             </VStack>
+
        
        
        

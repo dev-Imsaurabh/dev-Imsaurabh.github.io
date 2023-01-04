@@ -57,6 +57,7 @@ import {
   VERCEL_ICON,
   VIDEO_ICON,
   VIEW_ICON,
+  VIEW_ICON_SVG,
   VSCODE_ICON,
 } from "../scripts/config";
 import SkillCard from "./SkillCard";
@@ -105,8 +106,10 @@ export default function ProjectPost({
             <IconButton
               variant="ghost"
               colorScheme="gray"
+              style={{WebkitTapHighlightColor:"transparent"}}
+              onClick={()=>window.open(deployedLink)}
               aria-label="See menu"
-              icon={<MyIcon src={dotMenu} size={4} />}
+              icon={<MyIcon src={VIEW_ICON_SVG} size={6} />}
             />
           </Flex>
 

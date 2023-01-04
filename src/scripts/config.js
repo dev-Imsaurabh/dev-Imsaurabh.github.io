@@ -13,8 +13,10 @@ import emailIcon from "../assets/emailIcon.svg"
 import phoneIcon from "../assets/phoneIcon.svg"
 import locationIcon from "../assets/locationIcon.svg"
 import analyticsIcon from "../assets/analyticsIcon.svg"
-import githubIcon from "../assets/githubIcon.png"
-
+import githubIcon from "../assets/githubIcon.svg"
+import resumePdf from "../assets/Saurabh_Kumar_Resume.pdf"
+import downloadIcon from "../assets/downloadIcon.svg"
+import viewIcon from "../assets/viewIcon.svg"
 //Icons
 export const LOGO = logo
 export const HOME_ICON = homeIcon
@@ -38,6 +40,9 @@ export const GITHUB_COLOR_ICON =githubIcon
 export const EMAIL_COLOR_ICON ="https://cdn-icons-png.flaticon.com/512/9068/9068642.png"
 export const EMAIL_ICON = emailIcon
 export const ANALYTICS_ICON=analyticsIcon
+export const DOWNLOAD_ICON=downloadIcon
+export const VIEW_ICON_SVG =viewIcon
+
 
 
 //NavBarTabs
@@ -102,6 +107,8 @@ export const MY_POSITION_ID = "@FullStack_Web_Developer"
 export const MY_USERNAME= "dev.imsaurabh"
 export const ABOUT_ME="Hi 👋 there, my name is Saurabh Kumar and I am a passionate FullStack web developer. I am constantly learning and striving to improve my skills in order to deliver the best solutions for my clients. With a strong foundation in both front-end and back-end development, I am comfortable working on projects of all sizes and complexities. Whether you need a new website or want to update your existing online presence, I am here to help bring your vision to life. Thank you for visiting my website, I look forward to working with you! "
 export const MY_RESUME="https://drive.google.com/file/d/1vhOrWvGqdCA9NHk8qL77O99A3C2qZnf7/view"
+export const MY_RESUME_PDF=resumePdf
+export const MY_RESUME_PDF_FILE_NAME="Saurabh_Kumar_Resume.pdf"
 export const MY_PHONENUMBER="+916393567935"
 export const MY_EMAIL="sau4478@gmail.com"
 export const LINKEDIN= "https://www.linkedin.com/in/dev-saurabh-kumar/"

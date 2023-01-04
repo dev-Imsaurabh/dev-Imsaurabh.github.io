@@ -22,7 +22,7 @@ import {
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import logo from "../assets/SK.svg"
 import darkLogo from "../assets/darkLogo.svg"
-import { ABOUT_ME, ABOUT_ME_TAB_ID, CONTACT_ICON, CONTACT_TAB, CONTACT_TAB_ID, HOME_ICON, HOME_TAB_ID, PROFILE_ICON, PROJECTS_TAB, PROJECTS_TAB_ID, PROJECT_ICON, RESUME_ICON, RESUME_TAB_ID, SKILLS_TAB, SKILLS_TAB_ID, SKILL_ICON } from '../scripts/config';
+import { ABOUT_ME, ABOUT_ME_TAB_ID, CONTACT_ICON, CONTACT_TAB, CONTACT_TAB_ID, HOME_ICON, HOME_TAB_ID, MY_RESUME, MY_RESUME_PDF, MY_RESUME_PDF_FILE_NAME, PROFILE_ICON, PROJECTS_TAB, PROJECTS_TAB_ID, PROJECT_ICON, RESUME_ICON, RESUME_TAB_ID, SKILLS_TAB, SKILLS_TAB_ID, SKILL_ICON } from '../scripts/config';
 import MyIcon from './MyIcon';
 import { ScrollContext } from '../contexts/ScrollContext';
 
@@ -35,9 +35,28 @@ export default function Nav() {
   const navbars = [HOME_ICON,PROFILE_ICON,SKILL_ICON,PROJECT_ICON,CONTACT_ICON,RESUME_ICON]
   const navState = [HOME_TAB_ID,ABOUT_ME_TAB_ID,SKILLS_TAB_ID,PROJECTS_TAB_ID,CONTACT_TAB_ID,RESUME_TAB_ID]
   let navItems = navbars.map((el,i)=> <Wrap onClick={()=>{
-    handlePage(navState[i])
+    if(i==navbars.length-1){
+      window.open(MY_RESUME)
+    }else{
+      handlePage(navState[i])
+
+    }
   }}><MyIcon src={el} size={6}>
   </MyIcon></Wrap>)
+
+// function downloadFile(url, fileName) {
+//   fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
+//     .then(res => res.blob())
+//     .then(res => {
+//       const aElement = document.createElement('a');
+//       aElement.setAttribute('download', fileName);
+//       const href = URL.createObjectURL(res);
+//       aElement.href = href;
+//       aElement.setAttribute('target', '_blank');
+//       aElement.click();
+//       URL.revokeObjectURL(href);
+//     });
+// };
 
   return (
     <>

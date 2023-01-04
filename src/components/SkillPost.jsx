@@ -1,7 +1,7 @@
 import { Card, CardHeader, CardBody, CardFooter,IconButton ,Flex,Avatar,Heading,Box,Text,Image,Button, HStack, Grid, VStack} from '@chakra-ui/react'
 import MyIcon from './MyIcon'
 import dotMenu from "../assets/dotMenu.svg"
-import {  ANDROID_STUDIO_ICON, CHAKRA_UI_ICON, CODE_PEN, CODE_SAND_ICON, COMMENT_ICON, CSS_ICON, EXPRESS_ICON, FIREBASE_ICON, GIT_ICON, HEART_ICON, HTML_ICON, JAVASCRIPT_ICON, JAVA_ICON, KOTLIN_ICON, LOGO, MONGO_ICON, MYSQL_ICON, MY_NAME, MY_POSITION, MY_POSITION_ID, MY_USERNAME, NETLIFY_ICON, NODE_ICON, PHP_ICON, REACT_ICON, REDUX_ICON, RENDER_ICON, REPLIT_ICON, RETWEET_ICON, SHARE_ICON, SKILL_CAPTION, SUBLIME_ICON, TYPESCRIPT_ICON, VERCEL_ICON, VSCODE_ICON } from '../scripts/config'
+import {  ANDROID_STUDIO_ICON, CHAKRA_UI_ICON, CODE_PEN, CODE_SAND_ICON, COMMENT_ICON, CSS_ICON, EXPRESS_ICON, FIREBASE_ICON, GIT_ICON, HEART_ICON, HTML_ICON, JAVASCRIPT_ICON, JAVA_ICON, KOTLIN_ICON, LOGO, MONGO_ICON, MYSQL_ICON, MY_NAME, MY_POSITION, MY_POSITION_ID, MY_USERNAME, NETLIFY_ICON, NODE_ICON, PHP_ICON, REACT_ICON, REDUX_ICON, RENDER_ICON, REPLIT_ICON, RETWEET_ICON, SHARE_ICON, SKILL_CAPTION, SUBLIME_ICON, TYPESCRIPT_ICON, VERCEL_ICON, VIEW_ICON, VIEW_ICON_SVG, VSCODE_ICON } from '../scripts/config'
 import SkillCard from './SkillCard'
 import ButtonPanel from './ButtonPanel'
 import ResizeableText from './ResizableText'
@@ -54,12 +54,15 @@ let allSkill = skillList.map((el)=><SkillCard {...el}/>)
             <Text fontSize={"md"} color={"gray"}>{MY_POSITION_ID}</Text>
           </VStack>
         </Flex>
-        <IconButton
+        {/* <IconButton
           variant='ghost'
+
           colorScheme='gray'
           aria-label='See menu'
-          icon={<MyIcon src={dotMenu} size={4}/> }
-        />
+          onClick={()=>window.open}
+          icon={<MyIcon src={VIEW_ICON_SVG} size={4}/> }
+
+        /> */}
       </Flex>
     </CardHeader>
     <CardBody>

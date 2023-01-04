@@ -5,6 +5,8 @@ import TabHeading from "./TabHeading";
 import { useEffect } from "react";
 import GitHubCalendar from 'react-github-calendar';
 import "./cstyle.css"
+import ContactForm from "./ContactForm";
+import ContactFormMobile from "./ContactFormMobile";
 
 export default function GitField(){
     
@@ -19,7 +21,9 @@ export default function GitField(){
        <Image src={GITHUB_STATS_3} width="100%" borderRadius={10} bg={"gray"}/>
        <GitHubCalendar username={GITHUB_USERNAME} />
        <Image src={GITHUB_STATS_4} width="100%" borderRadius={10} bg={"gray"}/>
-       <Box h={"150px"} width="100%"></Box>
+       <ContactFormMobile />
+              <Box h={"150px"} width="100%"></Box>
+
 
        </VStack>
 
