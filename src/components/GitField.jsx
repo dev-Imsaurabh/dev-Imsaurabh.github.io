@@ -39,10 +39,10 @@ let {page,handlePage} = useContext(ScrollContext)
 
 
        <Stack display={{lg:"none",sm:"none",base:"-webkit-inline-flex"}}  ref={contactRef} alignItems={"flex-start"} margin="8px"><TabHeading  content={"Contact"}  size={"2xl"}/></Stack>
-       <ContactFormMobile />
        <Stack display={{lg:"none",sm:"none",base:"-webkit-inline-flex"}} ><TabHeading size={"md"} content={BOTTOM_LINE} /></Stack>
+       <ContactFormMobile />
         
-       <Box h={"80px"} width="100%"></Box>
+       <Box h={"90px"} width="100%"></Box>
 
     </Flex>
 }

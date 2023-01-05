@@ -124,7 +124,7 @@ export const MY_LOCATION="Varanasi, Uttar Pradesh"
 export const SKILL_CAPTION="I just learned that a healthy mix of humor and killer coding skills is the key to success in this industry! Who knew being a web developer could be so fun and rewarding?"
 export const SKILL_CAPTION_HASHTAG="#coding #webdevelopment #humor"
 export const STATS_CAPTION="Check out these impressive stats! Our hard work is pays off."
-export const BOTTOM_LINE="Leaving already? Come back soon! 🤗 "
+export const BOTTOM_LINE="Leaving already? reach out now! 🤗 "
 export const CONTACT_HEADLINE="Connect With Me"
 export const CONTACT_SUBLINE="let's geek out!"
 
