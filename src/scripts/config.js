@@ -17,6 +17,8 @@ import githubIcon from "../assets/githubIcon.svg"
 import resumePdf from "../assets/Saurabh_Kumar_Resume.pdf"
 import downloadIcon from "../assets/downloadIcon.svg"
 import viewIcon from "../assets/viewIcon.svg"
+import bannerImage from "../assets/bannerImg.png"
+
 //Icons
 export const LOGO = logo
 export const HOME_ICON = homeIcon
@@ -100,20 +102,32 @@ export const REPLIT_ICON="https://avatars.githubusercontent.com/u/983194?s=200&v
 
 //MyProfileInfo
 export const MY_PIC = "https://media.licdn.com/dms/image/D4D03AQGWQPwfnrQH3w/profile-displayphoto-shrink_400_400/0/1672306627471?e=1677715200&v=beta&t=mHkWKes7J_9_mn7LJxWzZY4YgSG_SMxDQT0Hiuh-1fE"
-export const MY_BANNER_PIC ="https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/banner/banner1.png?raw=true"
+// export const MY_PIC = "https://drive.google.com/uc?export=view&id=15JVBxfQW7o46ebmDLsyp-CPEjMOOsEaZ"
+// export const MY_BANNER_PIC ="https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/banner/banner1.png?raw=true"
+export const MY_BANNER_PIC =bannerImage
 export const MY_NAME="Saurabh Kumar"
 export const MY_POSITION = "FullStack Web Developer"
 export const MY_POSITION_ID = "@FullStack_Web_Developer"
 export const MY_USERNAME= "dev.imsaurabh"
-export const ABOUT_ME="Hi 👋 there, my name is Saurabh Kumar and I am a passionate FullStack web developer. I am constantly learning and striving to improve my skills in order to deliver the best solutions for my clients. With a strong foundation in both front-end and back-end development, I am comfortable working on projects of all sizes and complexities. Whether you need a new website or want to update your existing online presence, I am here to help bring your vision to life. Thank you for visiting my website, I look forward to working with you! "
+
+export const ABOUT_ME=`Hello there! 👋 Are you tired of dull, boring websites that are about as exciting as a bowl of plain oatmeal? Well, fear not! I'm here to save the day. My name is ${MY_NAME} and I am a 
+${MY_POSITION} with a knack for creating visually appealing and user-friendly websites that will have your visitors coming back for more. When I'm not busy turning lines of code into works of art, you can find me on LinkedIn posting awsome content for the people. So if you want to take your website to the next level, let's chat and make some magic happen!`
+
 export const MY_RESUME="https://drive.google.com/file/d/1vhOrWvGqdCA9NHk8qL77O99A3C2qZnf7/view"
 export const MY_RESUME_PDF=resumePdf
 export const MY_RESUME_PDF_FILE_NAME="Saurabh_Kumar_Resume.pdf"
-export const MY_PHONENUMBER="+916393567935"
+export const MY_COUNTRY_CODE="+91"
+export const MY_PHONENUMBER="6393567935"
 export const MY_EMAIL="sau4478@gmail.com"
 export const LINKEDIN= "https://www.linkedin.com/in/dev-saurabh-kumar/"
 export const MY_LOCATION="Varanasi, Uttar Pradesh"
-export const SKILL_CAPTION="Hi stranger, I am happy to share that i have gained this much of skills and done so many projects using these tools."
+export const SKILL_CAPTION="I just learned that a healthy mix of humor and killer coding skills is the key to success in this industry! Who knew being a web developer could be so fun and rewarding?"
+export const SKILL_CAPTION_HASHTAG="#coding #webdevelopment #humor"
+export const STATS_CAPTION="Check out these impressive stats! Our hard work is pays off."
+export const BOTTOM_LINE="Leaving already? Come back soon! 🤗 "
+export const CONTACT_HEADLINE="Connect With Me"
+export const CONTACT_SUBLINE="let's geek out!"
+
 
 
 
@@ -128,6 +142,11 @@ export const GITHUB_STATS_1 = `https://github-readme-stats.vercel.app/api?userna
 export const GITHUB_STATS_2 = `https://streak-stats.demolab.com?user=${GITHUB_USERNAME}&_border=true&theme=dark&hide_border=true&theme=react`
 export const GITHUB_STATS_3 = `https://github-readme-stats.vercel.app/api/top-langs/?username=${GITHUB_USERNAME}&theme=react&border_radius=4.6&hide_border=true&layout=compact&show_icons=true`
 export const GITHUB_STATS_4 = `https://github-readme-activity-graph.cyclic.app/graph?username=${GITHUB_USERNAME}&theme=react-dark&hide_border=true`
+
+
+//Contact Me Config
+export const FORMSPREE_ID="mwkjkokr"
+export const  FORMSPREE_API=`https://formspree.io/f/${FORMSPREE_ID}`
 
 
 

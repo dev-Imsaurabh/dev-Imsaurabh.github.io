@@ -66,7 +66,9 @@ export default function Nav() {
           <Flex alignItems={'center'} justify={"space-between"} gap={2} padding={4}>
             {navItems}
           </Flex>
+        
       </Flex>
+     
     </>
   );
 }

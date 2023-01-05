@@ -16,7 +16,7 @@ import {
   } from '@chakra-ui/react';
 import { useContext, useEffect, useRef, useState } from 'react';
 import { ScrollContext } from '../contexts/ScrollContext';
-import { ABOUT_ME, ABOUT_ME_TAB_ID, DOWNLOAD_ICON, EMAIL_ICON, GITHUB_FOLLOWERS_URL, GITHUB_REPO_COUNT, HOME_TAB_ID, LOCATION_ICON, MY_BANNER_PIC, MY_EMAIL, MY_LOCATION, MY_NAME, MY_PHONENUMBER, MY_PIC, MY_POSITION, MY_RESUME, MY_RESUME_PDF, MY_RESUME_PDF_FILE_NAME, PHONE_ICON } from '../scripts/config';
+import { ABOUT_ME, ABOUT_ME_TAB_ID, DOWNLOAD_ICON, EMAIL_ICON, GITHUB_FOLLOWERS_URL, GITHUB_REPO_COUNT, HOME_TAB_ID, LOCATION_ICON, MY_BANNER_PIC, MY_COUNTRY_CODE, MY_EMAIL, MY_LOCATION, MY_NAME, MY_PHONENUMBER, MY_PIC, MY_POSITION, MY_RESUME, MY_RESUME_PDF, MY_RESUME_PDF_FILE_NAME, PHONE_ICON } from '../scripts/config';
 import ConatctButtonPanel from './ContactButtonPanel';
 import MyIcon from './MyIcon';
 import TabHeading from './TabHeading';
@@ -132,7 +132,7 @@ const getRepoCount =async()=>{
             <Wrap>
               <HStack><MyIcon src={LOCATION_ICON} size={4}/><Text fontSize={"sm"}>{MY_LOCATION}</Text></HStack>
               <HStack><MyIcon src={EMAIL_ICON} size={4}/><Text fontSize={"sm"}>{MY_EMAIL}</Text></HStack>
-              <HStack><MyIcon src={PHONE_ICON} size={4}/><Text fontSize={"sm"}>{MY_PHONENUMBER}</Text></HStack>
+              <HStack><MyIcon src={PHONE_ICON} size={4}/><Text fontSize={"sm"}>{MY_COUNTRY_CODE+MY_PHONENUMBER}</Text></HStack>
             </Wrap>
          
 

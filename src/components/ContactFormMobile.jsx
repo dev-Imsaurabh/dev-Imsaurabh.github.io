@@ -26,16 +26,17 @@ import {
   } from 'react-icons/md';
   import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
 import TabHeading from './TabHeading';
+import { CONTACT_HEADLINE, CONTACT_SUBLINE, FORMSPREE_API } from '../scripts/config';
 
 export default function ContactFormMobile(){
 
-    return <WrapItem  m="auto"  display={{base:"block",sm:"none",lg:"none"}} width={"90%"} >
+    return <WrapItem  m="auto" padding={4}  display={{base:"block",sm:"none",lg:"none"}} width={"95%"} >
     <Box bg="transparent" mt="16px" width={"100%"} style={{boxShadow:"0px 3px 6px 6px rgba(180,234,255,0.16),0px 3px 6px 0px rgba(0,0,0,0.23)"}} borderRadius="lg">
       <Box m={8} color="white">
-        <form width={"100%"} action="https://formspree.io/f/mwkjkokr" method='POST'>
+        <form width={"100%"} action={FORMSPREE_API} method='POST'>
         <VStack width={"100%"} padding={4} spacing={5}>
-            <TabHeading content={"Get In Touch"} size={"lg"} />
-            <TabHeading content={"Fill up the form below to contact"} size={"sm"} />
+            <TabHeading content={CONTACT_HEADLINE} size={"lg"} />
+            <TabHeading content={CONTACT_SUBLINE} size={"sm"} />
           <FormControl id="name">
             <FormLabel>Your Name</FormLabel>
             <InputGroup borderColor="#E0E1E7">

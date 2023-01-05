@@ -113,11 +113,11 @@ export default function ProjectPost({
             />
           </Flex>
 
-          <Stack alignItems={"flex-start"}>
-          <Heading>{name}</Heading>
+          <Stack mt={"8px"} alignItems={"flex-start"}>
+          <Heading size={"md"} cursor={"pointer"} onClick={()=>window.open(deployedLink)}>{name}<span ><Badge colorScheme={"blue"} ml="8px">{projectType}</Badge></span></Heading>
           </Stack>
         </CardHeader>
-        <CardBody>
+        <CardBody mt={"-32px"}>
           <Wrap>
             <Text fontSize={"medium"} fontWeight="bold">Tech Stack:- </Text>
            {tech}
@@ -127,7 +127,7 @@ export default function ProjectPost({
 
         </CardBody>
         <VStack>
-          <Image  src={preview} w="90%" style={{boxShadow:"0px 3px 6px 6px rgba(180,234,255,0.16),0px 3px 6px 0px rgba(0,0,0,0.23)"}} borderRadius={20} />
+          <Image cursor={"pointer"} onClick={()=>window.open(deployedLink)} src={preview} w="90%" style={{boxShadow:"0px 3px 6px 6px rgba(180,234,255,0.16),0px 3px 6px 0px rgba(0,0,0,0.23)"}} borderRadius={20} />
         </VStack>
 
         <CardFooter
