@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.aa90c471.css",
-    "main.js": "/static/js/main.52e95d2f.js",
+    "main.js": "/static/js/main.dd15041c.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
-    "static/media/Saurabh_Kumar_Resume.pdf": "/static/media/Saurabh_Kumar_Resume.5c8c855e2ac78a0ccaa7.pdf",
+    "static/media/Saurabh_Kumar_Resume.pdf": "/static/media/Saurabh_Kumar_Resume.ba5c964d8e8b1617c9eb.pdf",
+    "static/media/bannerImg.png": "/static/media/bannerImg.350605275a4cda81bf8c.png",
     "static/media/SK.svg": "/static/media/SK.d2a91c6884c017d07c25f8c08c3255b1.svg",
     "static/media/darkLogo.svg": "/static/media/darkLogo.e16f22d0e6b0e298e3135064a0c596b4.svg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
@@ -27,11 +28,11 @@
     "static/media/downloadIcon.svg": "/static/media/downloadIcon.e0478beba1e2735e014a16b1ff296cae.svg",
     "static/media/commentIcon.svg": "/static/media/commentIcon.764a1ec035d77e265518dab06b828089.svg",
     "main.aa90c471.css.map": "/static/css/main.aa90c471.css.map",
-    "main.52e95d2f.js.map": "/static/js/main.52e95d2f.js.map",
+    "main.dd15041c.js.map": "/static/js/main.dd15041c.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aa90c471.css",
-    "static/js/main.52e95d2f.js"
+    "static/js/main.dd15041c.js"
   ]
 }
