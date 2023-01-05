@@ -43,6 +43,9 @@ const getRepoCount =async()=>{
     },[])
 
     useEffect(()=>{
+      if(page==null){
+        return
+      }
 
       if(page==HOME_TAB_ID){
         homeRef.current.scrollIntoView({ behavior: 'smooth' })

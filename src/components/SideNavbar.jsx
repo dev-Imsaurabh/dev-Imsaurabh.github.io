@@ -27,6 +27,7 @@ export default function SideNavbar() {
 
   const handleClick = (e) => {
     handlePage(e.target.id);
+    handlePage(null)
   };
   const navbars = [
     { name: "", icon: LOGO, rounded: true, rounded1: true },

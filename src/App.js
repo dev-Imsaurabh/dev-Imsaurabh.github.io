@@ -35,17 +35,22 @@ function App() {
       toggleColorMode();
     }
   }, []);
+  
   useEffect(()=>{
     //reset page onScroll
     const computedStyle = getComputedStyle(mainBoxRef.current);
     const position = computedStyle.getPropertyValue("position");
 if(position=="relative"){
   window.addEventListener("scroll",function(){
-    handlePage(null)
+    if(page!==null){
+      handlePage(null)
+    }
   })
 }else{
   mainBoxRef.current.addEventListener("scroll",function(){
-    handlePage(null)
+    if(page!==null){
+      handlePage(null)
+    }
   })
 }
   
@@ -74,32 +79,35 @@ if(position=="relative"){
         position={"fixed"}
         w={"50px"}
         h={"50px"}
+        style={{WebkitTapHighlightColor:"transparent"}}
         className="gotoTop"
-        
+        onClick={() => {
+          const computedStyle = getComputedStyle(mainBoxRef.current);
+          const position = computedStyle.getPropertyValue("position");
+
+          if (position == "relative") {
+            handlePage(HOME_TAB_ID)
+            console.log("yes")
+
+          }else {
+            handlePage(HOME_TAB_ID)
+          }
+        }}
+        cursor={"pointer"}
         bg={"blue.400"}
         borderRadius={50}
         // display={{lg:"none"}}
-        bottom={100}
+        bottom={150}
         left={7}
       >
         <Image
           borderRadius={50}
+          style={{WebkitTapHighlightColor:"transparent"}}
           transform={"rotate(-90deg)"}
           src={"https://i.giphy.com/media/nVE8OaIGkUhf7rkieR/giphy.webp"}
           w="100%"
           h="100%"
-          onClick={() => {
-            const computedStyle = getComputedStyle(mainBoxRef.current);
-            const position = computedStyle.getPropertyValue("position");
-
-            if (position == "relative") {
-              handlePage(HOME_TAB_ID)
-              console.log("yes")
-
-            }else {
-              handlePage(HOME_TAB_ID)
-            }
-          }}
+        
         />
       </Box>
     </Box>

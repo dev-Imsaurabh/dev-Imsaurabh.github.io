@@ -11,7 +11,14 @@
 }
 .gotoTop{
     animation: upDown 5s linear 2s infinite alternate;
+    
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
+
+    
+
+.gotoTop:active{
+    transform: scale(0.7);
+}
 .gotoTopContact{
     animation: upDown1 5s linear 2s infinite alternate;
 }
@@ -21,11 +28,11 @@
         width:50px;
     }
 50%{
-        bottom: 150px;
+        bottom: 100px;
     }
 
     100%{
-        bottom: 100px;
+        bottom: 130px;
     }
 }
 
