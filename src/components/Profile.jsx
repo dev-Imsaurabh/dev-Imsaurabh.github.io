@@ -53,7 +53,13 @@ const getRepoCount =async()=>{
 
     },[page])
 
-    const download =  useRef()
+    function downloadFile(){
+      let link = document.createElement("a");
+      link.download = MY_RESUME_PDF_FILE_NAME;
+      link.href = MY_RESUME_PDF;
+      link.click();
+      link.remove()
+}
 
     return (
         <Box
@@ -93,7 +99,7 @@ const getRepoCount =async()=>{
              rounded={'full'}
                 bg={'blue.400'}
                 color={'white'}
-                onClick={()=>download.current.click()}
+                onClick={()=>downloadFile()}
                 rightIcon={<MyIcon src={DOWNLOAD_ICON} size={4}/>}
                 boxShadow={
                   '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
@@ -106,8 +112,10 @@ const getRepoCount =async()=>{
                   bg: 'blue.500',
                   
                 }}>
-               <a ref={download} href={MY_RESUME_PDF} download={MY_RESUME_PDF_FILE_NAME}>Download Resume</a>
+                  Resume
               </Button>
+              {/* <a ref={download} href={MY_RESUME_PDF } download={MY_RESUME_PDF_FILE_NAME} ></a> */}
+
               
             </VStack>
 
