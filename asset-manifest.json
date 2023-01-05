@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f139a3f6.css",
-    "main.js": "/static/js/main.b5787d96.js",
+    "main.css": "/static/css/main.73c4ce61.css",
+    "main.js": "/static/js/main.b854405a.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/Saurabh_Kumar_Resume.pdf": "/static/media/Saurabh_Kumar_Resume.ba5c964d8e8b1617c9eb.pdf",
     "static/media/bannerImg.png": "/static/media/bannerImg.350605275a4cda81bf8c.png",
@@ -27,12 +27,12 @@
     "index.html": "/index.html",
     "static/media/downloadIcon.svg": "/static/media/downloadIcon.e0478beba1e2735e014a16b1ff296cae.svg",
     "static/media/commentIcon.svg": "/static/media/commentIcon.764a1ec035d77e265518dab06b828089.svg",
-    "main.f139a3f6.css.map": "/static/css/main.f139a3f6.css.map",
-    "main.b5787d96.js.map": "/static/js/main.b5787d96.js.map",
+    "main.73c4ce61.css.map": "/static/css/main.73c4ce61.css.map",
+    "main.b854405a.js.map": "/static/js/main.b854405a.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f139a3f6.css",
-    "static/js/main.b5787d96.js"
+    "static/css/main.73c4ce61.css",
+    "static/js/main.b854405a.js"
   ]
 }
