@@ -23,17 +23,14 @@ export default function PostField(){
 
     useEffect(()=>{
       //reset page onScroll
-    postFieldRef.current.addEventListener("scroll",function(){
-      if(page!==null){
-         handlePage(null)
-      }
-    })
+         postFieldRef.current.addEventListener("scroll",function(){
+            handlePage(null)
+          })
+      
+    
     },[])
 
     useEffect(()=>{
-      if(page==null){
-         return
-       }
 
      if(page==PROJECTS_TAB_ID){
         projectRef.current.scrollIntoView({ behavior: 'smooth'})

@@ -35,20 +35,19 @@ function App() {
       toggleColorMode();
     }
   }, []);
-  
   useEffect(()=>{
     //reset page onScroll
     const computedStyle = getComputedStyle(mainBoxRef.current);
     const position = computedStyle.getPropertyValue("position");
 if(position=="relative"){
+ if(page!=null){
   window.addEventListener("scroll",function(){
-    if(page!==null){
-      handlePage(null)
-    }
+    handlePage(null)
   })
+ }
 }else{
   mainBoxRef.current.addEventListener("scroll",function(){
-    if(page!==null){
+    if(page!=null){
       handlePage(null)
     }
   })

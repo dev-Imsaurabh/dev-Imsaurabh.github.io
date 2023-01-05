@@ -22,6 +22,7 @@ import MyIcon from './MyIcon';
 import TabHeading from './TabHeading';
 
 const getRepoCount =async()=>{
+
     const res = await fetch(GITHUB_REPO_COUNT)
     const data = await res.json()
     return data.length
@@ -29,7 +30,7 @@ const getRepoCount =async()=>{
 }  
   export default function Profile() {   
     const [repoCount,setRepoCount] = useState(0)
-    const {page} = useContext(ScrollContext)
+    const {page,handlePage} = useContext(ScrollContext)
     const homeRef = useRef(null)
     const aboutmeRef = useRef(null)
 
@@ -43,9 +44,6 @@ const getRepoCount =async()=>{
     },[])
 
     useEffect(()=>{
-      if(page==null){
-        return
-      }
 
       if(page==HOME_TAB_ID){
         homeRef.current.scrollIntoView({ behavior: 'smooth' })
@@ -55,6 +53,15 @@ const getRepoCount =async()=>{
      }
 
     },[page])
+    
+useEffect(()=>{
+  if(page!=null){
+    window.addEventListener("scroll",function(){
+      handlePage(null)
+    })
+  }
+ 
+})
 
     function downloadFile(){
       let link = document.createElement("a");
