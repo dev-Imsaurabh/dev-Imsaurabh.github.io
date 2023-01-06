@@ -73,7 +73,7 @@ export default function ContactFormMobile(){
           <FormControl id="name" float="right">
             <Button
               variant="solid"
-              bg="#0D74FF"
+              bg="blue.500"
               type='submit'
               color="white"
               _hover={{}}>

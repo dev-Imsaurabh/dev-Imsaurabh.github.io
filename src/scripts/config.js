@@ -111,7 +111,7 @@ export const MY_POSITION_ID = "@FullStack_Web_Developer"
 export const MY_USERNAME= "dev.imsaurabh"
 
 export const ABOUT_ME=`Hello there! 👋 Are you tired of dull, boring websites that are about as exciting as a bowl of plain oatmeal? Well, fear not! I'm here to save the day. My name is ${MY_NAME} and I am a 
-${MY_POSITION} with a knack for creating visually appealing and user-friendly websites that will have your visitors coming back for more. When I'm not busy turning lines of code into works of art, you can find me on LinkedIn posting awsome content for the people. So if you want to take your website to the next level, let's chat and make some magic happen!`
+${MY_POSITION} with a knack for creating visually appealing and user-friendly websites that will have your visitors coming back for more. When I'm not busy turning lines of code into works of art, you can find me on LinkedIn posting awesome content for the people. So if you want to take your website to the next level, let's chat and make some magic happen!`
 
 export const MY_RESUME="https://drive.google.com/file/d/1vhOrWvGqdCA9NHk8qL77O99A3C2qZnf7/view"
 export const MY_RESUME_PDF=resumePdf
