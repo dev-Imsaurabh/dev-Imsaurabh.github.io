@@ -29,10 +29,10 @@ let {page,handlePage} = useContext(ScrollContext)
         <TabHeading content={"#Trending on my GitHub"} size={"md"} />
        <Image src={GITHUB_STATS_1} width="100%" borderRadius={10} bg={"gray"}/>
        <Image src={GITHUB_STATS_2} width="100%" borderRadius={10} bg={"gray"}/>
-       <Image display={{base:"block",sm:"none",lg:"block"}} src={GITHUB_STATS_4} width="100%" borderRadius={10} bg={"gray"}/>
+       <Image display={{base:"block",sm:"none",lg:"block"}} src={GITHUB_STATS_4} width="100%"/>
        <GitHubCalendar username={GITHUB_USERNAME} />
-       <Image src={GITHUB_STATS_3} width="100%" borderRadius={10} bg={"gray"}/>
-       <Image src={GITHUB_STATS_5} width="100%" borderRadius={10} bg={"gray"}/>
+       <Image src={GITHUB_STATS_3} width="100%" borderRadius={10}/>
+       <Image src={GITHUB_STATS_5} width="100%" borderRadius={10}/>
       
 
 

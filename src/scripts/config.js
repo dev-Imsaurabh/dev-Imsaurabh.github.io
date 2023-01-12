@@ -141,9 +141,9 @@ export const GITHUB_PROFILE_LINK=`https://github.com/${GITHUB_USERNAME}`
 export const GITHUB_FOLLOWERS_URL= `https://api.github.com/users/${GITHUB_USERNAME}/followers`
 export const GITHUB_FOLLOWING_URL= `https://api.github.com/users/${GITHUB_USERNAME}/followers`
 export const GITHUB_REPO_COUNT =`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`
-export const GITHUB_STATS_1 = `https://github-stats-alpha.vercel.app/api?username=${GITHUB_USERNAME}&cc=20232a&tc=fff&ic=fff&bc=gray
+export const GITHUB_STATS_1 = `https://github-stats-alpha.vercel.app/api?username=${GITHUB_USERNAME}&cc=2e3440&tc=fff&ic=fff&bc=gray
 `
-export const GITHUB_STATS_2 = `https://streak-stats.demolab.com?user=${GITHUB_USERNAME}&_border=true&theme=dark&hide_border=true&theme=react`
+export const GITHUB_STATS_2 = `https://streak-stats.demolab.com/?user=dev-Imsaurabh&theme=react&background=2e3440`
 export const GITHUB_STATS_3 = `https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${GITHUB_USERNAME}&theme=nord_dark`
 
 export const GITHUB_STATS_4 = `http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${GITHUB_USERNAME}&theme=nord_dark`
