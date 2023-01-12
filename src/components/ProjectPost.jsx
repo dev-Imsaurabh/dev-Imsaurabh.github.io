@@ -11,56 +11,22 @@ import {
   Text,
   Image,
   Button,
-  HStack,
-  Grid,
   VStack,
   Badge,
   Wrap,
   Stack,
 } from "@chakra-ui/react";
 import MyIcon from "./MyIcon";
-import dotMenu from "../assets/dotMenu.svg";
 import {
-  ANDROID_STUDIO_ICON,
-  CHAKRA_UI_ICON,
-  CODE_PEN,
-  CODE_SAND_ICON,
-  COMMENT_ICON,
-  CSS_ICON,
-  EXPRESS_ICON,
-  FIREBASE_ICON,
   GITHUB_ICON,
-  GIT_ICON,
-  HEART_ICON,
-  HTML_ICON,
-  JAVASCRIPT_ICON,
-  JAVA_ICON,
-  KOTLIN_ICON,
   LOGO,
-  MONGO_ICON,
-  MYSQL_ICON,
   MY_NAME,
-  MY_POSITION,
   MY_POSITION_ID,
   MY_USERNAME,
-  NETLIFY_ICON,
-  NODE_ICON,
-  PHP_ICON,
-  REACT_ICON,
-  REDUX_ICON,
-  RENDER_ICON,
-  REPLIT_ICON,
-  RETWEET_ICON,
-  SHARE_ICON,
-  SUBLIME_ICON,
-  TYPESCRIPT_ICON,
-  VERCEL_ICON,
   VIDEO_ICON,
-  VIEW_ICON,
   VIEW_ICON_SVG,
-  VSCODE_ICON,
+  WEB_ICON,
 } from "../scripts/config";
-import SkillCard from "./SkillCard";
 import PhotoDrawer from "./PhotoDrawer";
 import ButtonPanel from "./ButtonPanel";
 import ResizeableText from "./ResizableText";
@@ -76,12 +42,10 @@ export default function ProjectPost({
   projectType,
   video,
 }) {
-
-  const tech = techStack.map((el)=> <Badge colorScheme="green">{el}</Badge>)
-
+  const tech = techStack.map((el) => <Badge colorScheme="green">{el}</Badge>);
 
   return (
-    <Box _hover={{bg:"#002D3748"}}>
+    <Box _hover={{ bg: "#002D3748" }}>
       <Card
         w={"full"}
         borderRadius={0}
@@ -106,28 +70,50 @@ export default function ProjectPost({
             <IconButton
               variant="ghost"
               colorScheme="gray"
-              style={{WebkitTapHighlightColor:"transparent"}}
-              onClick={()=>window.open(deployedLink)}
+              style={{ WebkitTapHighlightColor: "transparent" }}
+              onClick={() => window.open(deployedLink)}
               aria-label="See menu"
               icon={<MyIcon src={VIEW_ICON_SVG} size={6} />}
             />
           </Flex>
 
           <Stack mt={"8px"} alignItems={"flex-start"}>
-          <Heading size={"md"} cursor={"pointer"} onClick={()=>window.open(deployedLink)}>{name}<span ><Badge colorScheme={"blue"} ml="8px">{projectType}</Badge></span></Heading>
+            <Heading
+              size={"md"}
+              cursor={"pointer"}
+              onClick={() => window.open(deployedLink)}
+            >
+              {name}
+              <span>
+                <Badge colorScheme={"blue"} ml="8px">
+                  {projectType}
+                </Badge>
+              </span>
+            </Heading>
           </Stack>
         </CardHeader>
         <CardBody mt={"-32px"}>
           <Wrap>
-            <Text fontSize={"medium"} fontWeight="bold">Tech Stack:- </Text>
-           {tech}
+            <Text fontSize={"medium"} fontWeight="bold">
+              Tech Stack:-{" "}
+            </Text>
+            {tech}
           </Wrap>
           {/* <Text textAlign={"left"}>{desc}</Text> */}
-          <ResizeableText text={desc}/>
-
+          <ResizeableText text={desc} />
         </CardBody>
         <VStack>
-          <Image cursor={"pointer"} onClick={()=>window.open(deployedLink)} src={preview} w="90%" style={{boxShadow:"0px 3px 6px 6px rgba(180,234,255,0.16),0px 3px 6px 0px rgba(0,0,0,0.23)"}} borderRadius={20} />
+          <Image
+            cursor={"pointer"}
+            onClick={() => window.open(deployedLink)}
+            src={preview}
+            w="90%"
+            style={{
+              boxShadow:
+                "0px 3px 6px 6px rgba(180,234,255,0.16),0px 3px 6px 0px rgba(0,0,0,0.23)",
+            }}
+            borderRadius={20}
+          />
         </VStack>
 
         <CardFooter
@@ -140,33 +126,30 @@ export default function ProjectPost({
           }}
         >
           <Button
-           onClick={()=>{
-            window.open(deployedLink,"_blank")
-          }}
+            onClick={() => {
+              window.open(deployedLink, "_blank");
+            }}
             gap={0}
             fontSize={"sm"}
             _active={{ bg: "transparent" }}
             _hover={{ bg: "transparent" }}
-
             justifyContent={"center"}
-            style={{WebkitTapHighlightColor:"transparent"}}
+            style={{ WebkitTapHighlightColor: "transparent" }}
             flex="1"
             variant="ghost"
-            leftIcon={<MyIcon src={NETLIFY_ICON} size={4} rounded={true} />}
+            leftIcon={<MyIcon src={WEB_ICON} size={4} rounded={true} />}
           >
-            Netlify
+            Live
           </Button>
           <Button
-           onClick={()=>{
-            window.open(githubLink,"_blank")
-          }}
-          fontSize={"sm"}
-
+            onClick={() => {
+              window.open(githubLink, "_blank");
+            }}
+            fontSize={"sm"}
             gap={0}
             _active={{ bg: "transparent" }}
             _hover={{ bg: "transparent" }}
-            style={{WebkitTapHighlightColor:"transparent"}}
-
+            style={{ WebkitTapHighlightColor: "transparent" }}
             justifyContent={"center"}
             flex="1"
             variant="ghost"
@@ -175,30 +158,26 @@ export default function ProjectPost({
             GitHub
           </Button>
           <Button
-           onClick={()=>{
-            window.open(video,"_blank")
-          }}
+            onClick={() => {
+              window.open(video, "_blank");
+            }}
             gap={0}
             fontSize={"sm"}
-
             _active={{ bg: "transparent" }}
             _hover={{ bg: "transparent" }}
-            style={{WebkitTapHighlightColor:"transparent"}}
-
+            style={{ WebkitTapHighlightColor: "transparent" }}
             justifyContent={"center"}
+            display={video==""?"none":"block"}
             flex="1"
             variant="ghost"
             leftIcon={<MyIcon src={VIDEO_ICON} size={4} rounded={true} />}
           >
             Video
           </Button>
-         
-         <PhotoDrawer images={image} />
 
-
+          <PhotoDrawer images={image} />
         </CardFooter>
         <ButtonPanel />
-
       </Card>
     </Box>
   );

@@ -33,6 +33,83 @@
       "projectType":"Individual",
       "preview":"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/preview/zs-preview.png?raw=true",
       "video": "https://drive.google.com/file/d/1o511dbF1EK6Ux3HIv1PgLPvX_rVxSlWy/view?usp=share_link"
+    },
+    {
+      "name": "Picoholic-Photo Editor-crop dp",
+      "desc": "Picoholic photo editor is a simple image editor comes free, without ads and easy to use and also with Image Combiner and inbuilt feature of No crop Whatsapp DP. It comes with hundred's of color background which you can apply in the image background and save instantly to your Gallery. You can apply infinite Images, Text and emojis elements and combine them together with high resolution image.",
+      "image": [
+        "https://play-lh.googleusercontent.com/VqGHRTjU8dXBQGiA2yB_fwFbUAG7vLvQon8E0RFpsMq0Wj0Ud4hOzE154xFEiE50gg=w2560-h1440-rw",
+
+      "https://play-lh.googleusercontent.com/eqtnX6RQ-R51CIF5RjeQlz2vLwO9g_7WCX9RkVUQRoe5hG7umdOafIRmLWNhPGF14fnG=w2560-h1440-rw",
+
+      "https://play-lh.googleusercontent.com/dNRenYKvDMcIekRm90EKN8Ww_1gvvLSKaP7dP1hysZex4063T9OMjzv42Vb0CbuuO9y_=w2560-h1440-rw",
+
+      "https://play-lh.googleusercontent.com/i3TTghMDx1cLKxiHu8fGW-x8Tn2YDPGB5XmdUxqa_6wbs13-FqKBKrocK8hFQGWqhcA=w2560-h1440-rw",
+
+      
+      "https://play-lh.googleusercontent.com/GTc2C1UGKOu0Bj488brWtrVUjfPwgBL-67YsAoF_2PdiYoIRxDYxIbdfMCswD8QGhT0Q=w2560-h1440-rw",
+
+      "https://play-lh.googleusercontent.com/sBrmG_MAjS2-9yVUoz0BJJc3fyBJqFms88TUi6vLlvWnuIbMofxo3GO74NJPddse3Roc=w2560-h1440-rw",
+
+      "https://play-lh.googleusercontent.com/iG8z6Z3LbTduowlkn1TVAvDhaWFZZ4TC-5sM_8wZL1FcAMyufIFZbV7cK8DeOIXPEb8z=w2560-h1440-rw",
+
+      "https://play-lh.googleusercontent.com/Xu1Mljrl4YGBp0g62uInzrWRW9AFVA9eN0VGze-5iuD05PpN5emLOZMc6EYUIKDgew=w2560-h1440-rw"
+    ],
+      "techStack": ["Java","Android Studio","Shared Preference"],
+      "githubLink": "https://github.com/dev-Imsaurabh/PicoholicPhotoEditor",
+      "deployedLink": "https://play.google.com/store/apps/details?id=com.mac.picoholic&hl=en_IN&gl=US",
+      "projectType":"Individual",
+      "preview":"https://play-lh.googleusercontent.com/6xb-b29hT1fqOhBZq0QA9g6X_3WPwlQq20rAezK8IktnPdFrVa7Ppt9auIQaBlBWnxA=w416-h235-rw",
+      "video": ""
+    },
+    {
+      "name": "Ek Chitthi: Letter Posting App",
+      "desc": "Ek Chitthi: Letter Posting App and Slow Messaging App Allows you to send Letter to your Friends and Family. Post Letter to your Girlfriend who is living far from your. More the Distance, It will take more time to reach to its destination.",
+      "image": [
+        "https://play-lh.googleusercontent.com/x3xblqabF7uzvL0vblnMfU_xjL2uEBYf2ipQVbMbq-Wd3oTg5V16yd1RbmDIxvfT9g=w2560-h1440-rw",
+
+      "https://play-lh.googleusercontent.com/DhbnF3NHQpVNY-m0gbo4V-Doj41kRgNZHkvylZ8Paeg2NyAkt_txS9YF878LRixaV9Zs=w2560-h1440-rw",
+
+      "https://play-lh.googleusercontent.com/W1s4iRini-7paJhZEhnjUpcGtfccKZDpHfNh_xsq1ZkzEzpeRLq5E4nh5crWn5xxfLE=w2560-h1440-rw",
+
+      "https://play-lh.googleusercontent.com/mby77EnjwwpbStzST1RuSNpgm8zKmcNxt_9L7xHqqAdwIIP_HZZrThS1ADTeYX3E5VA=w2560-h1440-rw",
+
+      
+      "https://play-lh.googleusercontent.com/41vv_-HfAW_6nEbPUdiK6v62abk3j3-7mspVuoe4ppyHjiduVj3bnSmmhdA3wxYS1_k=w2560-h1440-rw",
+
+      "https://play-lh.googleusercontent.com/5ASM_emafjmXYJcNlGmQTFdhv4iIBCdwLrlDWwdmB3NwZLsJzmg0MaoDfgQvHbekVaMK=w2560-h1440-rw",
+
+      "https://play-lh.googleusercontent.com/wo21AlxJNCJT-VLdfplscaGSROiK2Sc8M42DLNV37o5WTe42aQyBuu-cotG5rcou1g=w2560-h1440-rw",
+
+      "https://play-lh.googleusercontent.com/XRccTEBj6n75W2iOtvJsDxhqRHNUhkXXvlOTS4pk4hVn9haFvjGKU4ezRjjgj8WjQg=w2560-h1440-rw"
+    ],
+      "techStack": ["Java","Android Studio","JSOUP","Firebase","FCM","Node js"],
+      "githubLink": "https://github.com/dev-Imsaurabh/EkChitthi",
+      "deployedLink": "https://play.google.com/store/apps/details?id=com.mac.ekchitthi&hl=en_IN&gl=US",
+      "projectType":"Individual",
+      "preview":"https://play-lh.googleusercontent.com/4DvskNINZ6b9gmrIn7qdWm9SPND-3FoDspPvFGq-0JTHbXf3BrRDUMJ1JQnTV5AXiFE=w416-h235-rw",
+      "video": ""
+    },
+    {
+      "name": "Find My Trashcan - Android App",
+      "desc": "Many times we don't find any dustbin nearby on roadside. Find My Trashcan helps you to find Trashcan near you in your area. This App is made to support our government campaign Swachh Bharat Mission. People help each other to find dustbin for each other.",
+      "image": [
+        "https://play-lh.googleusercontent.com/m_PIY1xYgUiJB4dZT5s0N9I17G8mOzLZYCP2HtNGwWgs1Zs7jxDUzP3Q4WgAPYLWeg=w2560-h1440-rw",
+      "https://play-lh.googleusercontent.com/w6bcwLvA85DLvozi-xlWDvITe36zAnKtbO4ULYKlvgjNKWCSrP731KViVdCn0QkEmVZF=w2560-h1440-rw",
+      "https://play-lh.googleusercontent.com/CXTv52aH3BVWIHm12ycEc1ioBVRSaD897sVSIaEyvLkf7k1heUkFLyiCNUCTGPRqFg-R=w2560-h1440-rw",
+      "https://play-lh.googleusercontent.com/PZU3jSaR2vGgNkj3pYcvDwBaGER03s0z2FEh-hbqGg_rBoosHZ_v0CzdJrh8q6i5YM4=w2560-h1440-rw",
+
+      
+      "https://play-lh.googleusercontent.com/UQpgxIjttwe2_tEG1lbTCn4tuUZXX6UtxGGtE9viXA0ae4bKX1b5U6BkpmX2aGd4yiPE=w2560-h1440-rw",
+      "https://play-lh.googleusercontent.com/XXaxJrLBwFIxxp2lUzmfbaH11onxZ565plrRp7ZBa0PnjtphMotRc7I4Cd_TqgLalDc=w2560-h1440-rw"
+    ],
+      "techStack": ["Java","Android Studio","Google Map SDK","Firebase","FCM"],
+      "githubLink": "https://github.com/dev-Imsaurabh/FindMyTrash",
+      "deployedLink": "https://play.google.com/store/apps/details?id=com.mac.findmytrash",
+      "projectType":"Individual",
+      "preview":"https://play-lh.googleusercontent.com/diqPc0ohphZed2RSa0sQA4bUzgbWCIeeWGj0IoXqIbmZzSGTI4snHHaDujEDDhHvckY=w416-h235-rw",
+      "video": ""
     }
+    
   ]
 }

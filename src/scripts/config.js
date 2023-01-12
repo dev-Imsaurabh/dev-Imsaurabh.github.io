@@ -45,6 +45,7 @@ export const EMAIL_ICON = emailIcon
 export const ANALYTICS_ICON=analyticsIcon
 export const DOWNLOAD_ICON=downloadIcon
 export const VIEW_ICON_SVG =viewIcon
+export const WEB_ICON ="https://cdn-icons-png.flaticon.com/512/3059/3059997.png"
 
 
 
@@ -140,10 +141,14 @@ export const GITHUB_PROFILE_LINK=`https://github.com/${GITHUB_USERNAME}`
 export const GITHUB_FOLLOWERS_URL= `https://api.github.com/users/${GITHUB_USERNAME}/followers`
 export const GITHUB_FOLLOWING_URL= `https://api.github.com/users/${GITHUB_USERNAME}/followers`
 export const GITHUB_REPO_COUNT =`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100`
-export const GITHUB_STATS_1 = `https://github-readme-stats.vercel.app/api?username=${GITHUB_USERNAME}&theme=react&border_radius=4.6&show_icons=true&count_private=true&hide_border=true&show_icons=true`
+export const GITHUB_STATS_1 = `https://github-stats-alpha.vercel.app/api?username=${GITHUB_USERNAME}&cc=20232a&tc=fff&ic=fff&bc=gray
+`
 export const GITHUB_STATS_2 = `https://streak-stats.demolab.com?user=${GITHUB_USERNAME}&_border=true&theme=dark&hide_border=true&theme=react`
-export const GITHUB_STATS_3 = `https://github-readme-stats.vercel.app/api/top-langs/?username=${GITHUB_USERNAME}&theme=react&border_radius=4.6&hide_border=true&layout=compact&show_icons=true`
-export const GITHUB_STATS_4 = `https://github-readme-activity-graph.cyclic.app/graph?username=${GITHUB_USERNAME}&theme=react-dark&hide_border=true`
+export const GITHUB_STATS_3 = `https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=${GITHUB_USERNAME}&theme=nord_dark`
+
+export const GITHUB_STATS_4 = `http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=${GITHUB_USERNAME}&theme=nord_dark`
+export const GITHUB_STATS_5 = `http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=${GITHUB_USERNAME}&theme=nord_dark`
+
 
 
 //Contact Me Config

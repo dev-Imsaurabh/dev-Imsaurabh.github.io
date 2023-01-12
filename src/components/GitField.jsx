@@ -1,5 +1,5 @@
 import { Box, Flex, Image, Stack, VStack } from "@chakra-ui/react";
-import { BOTTOM_LINE, CONTACT_TAB_ID, GITHUB_STATS_1, GITHUB_STATS_2, GITHUB_STATS_3, GITHUB_STATS_4, GITHUB_USERNAME, MY_PIC } from "../scripts/config";
+import { BOTTOM_LINE, CONTACT_TAB_ID, GITHUB_STATS_1, GITHUB_STATS_2, GITHUB_STATS_3, GITHUB_STATS_4, GITHUB_STATS_5, GITHUB_USERNAME, MY_PIC } from "../scripts/config";
 import "./cstyle.css"
 import TabHeading from "./TabHeading";
 import { useContext, useEffect, useRef } from "react";
@@ -29,9 +29,10 @@ let {page,handlePage} = useContext(ScrollContext)
         <TabHeading content={"#Trending on my GitHub"} size={"md"} />
        <Image src={GITHUB_STATS_1} width="100%" borderRadius={10} bg={"gray"}/>
        <Image src={GITHUB_STATS_2} width="100%" borderRadius={10} bg={"gray"}/>
-       <Image src={GITHUB_STATS_3} width="100%" borderRadius={10} bg={"gray"}/>
-       <GitHubCalendar username={GITHUB_USERNAME} />
        <Image display={{base:"block",sm:"none",lg:"block"}} src={GITHUB_STATS_4} width="100%" borderRadius={10} bg={"gray"}/>
+       <GitHubCalendar username={GITHUB_USERNAME} />
+       <Image src={GITHUB_STATS_3} width="100%" borderRadius={10} bg={"gray"}/>
+       <Image src={GITHUB_STATS_5} width="100%" borderRadius={10} bg={"gray"}/>
       
 
 
