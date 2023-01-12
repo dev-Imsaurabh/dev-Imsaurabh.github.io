@@ -18,6 +18,7 @@ import resumePdf from "../assets/Saurabh_Kumar_Resume.pdf"
 import downloadIcon from "../assets/downloadIcon.svg"
 import viewIcon from "../assets/viewIcon.svg"
 import bannerImage from "../assets/bannerImg.png"
+import profilePic from "../assets/profilePic.png"
 
 //Icons
 export const LOGO = logo
@@ -101,7 +102,7 @@ export const REPLIT_ICON="https://avatars.githubusercontent.com/u/983194?s=200&v
 
 
 //MyProfileInfo
-export const MY_PIC = "https://media.licdn.com/dms/image/D4D03AQGWQPwfnrQH3w/profile-displayphoto-shrink_400_400/0/1672306627471?e=1677715200&v=beta&t=mHkWKes7J_9_mn7LJxWzZY4YgSG_SMxDQT0Hiuh-1fE"
+export const MY_PIC =profilePic
 // export const MY_PIC = "https://drive.google.com/uc?export=view&id=15JVBxfQW7o46ebmDLsyp-CPEjMOOsEaZ"
 // export const MY_BANNER_PIC ="https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/banner/banner1.png?raw=true"
 export const MY_BANNER_PIC =bannerImage
@@ -109,6 +110,7 @@ export const MY_NAME="Saurabh Kumar"
 export const MY_POSITION = "FullStack Web Developer"
 export const MY_POSITION_ID = "@FullStack_Web_Developer"
 export const MY_USERNAME= "dev.imsaurabh"
+
 
 export const ABOUT_ME=`Hello there! 👋 Are you tired of dull, boring websites that are about as exciting as a bowl of plain oatmeal? Well, fear not! I'm here to save the day. My name is ${MY_NAME} and I am a 
 ${MY_POSITION} with a knack for creating visually appealing and user-friendly websites that will have your visitors coming back for more. When I'm not busy turning lines of code into works of art, you can find me on LinkedIn posting awesome content for the people. So if you want to take your website to the next level, let's chat and make some magic happen!`
