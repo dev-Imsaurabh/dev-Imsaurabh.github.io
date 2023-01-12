@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.122d0aab.css",
-    "main.js": "/static/js/main.b6ea7b15.js",
+    "main.js": "/static/js/main.8a213cc9.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/profilePic.png": "/static/media/profilePic.ad02a7d4bdc220782dd0.png",
     "static/media/Saurabh_Kumar_Resume.pdf": "/static/media/Saurabh_Kumar_Resume.ba5c964d8e8b1617c9eb.pdf",
@@ -29,11 +29,11 @@
     "static/media/downloadIcon.svg": "/static/media/downloadIcon.e0478beba1e2735e014a16b1ff296cae.svg",
     "static/media/commentIcon.svg": "/static/media/commentIcon.764a1ec035d77e265518dab06b828089.svg",
     "main.122d0aab.css.map": "/static/css/main.122d0aab.css.map",
-    "main.b6ea7b15.js.map": "/static/js/main.b6ea7b15.js.map",
+    "main.8a213cc9.js.map": "/static/js/main.8a213cc9.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.122d0aab.css",
-    "static/js/main.b6ea7b15.js"
+    "static/js/main.8a213cc9.js"
   ]
 }
