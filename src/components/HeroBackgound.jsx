@@ -28,7 +28,7 @@ export default function HeroBackground() {
       position={"absolute"}
       zIndex={1000}
       opacity={visible ? 1 : 0}
-      transition={"visibility 0s 2s, opacity 2s linear;"}
+      transition={"visibility 0s 0.5s, opacity 0.5s linear;"}
       visibility={visible ? "visible" : "hidden"}
       style={{}}
       width={"100%"}
