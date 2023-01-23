@@ -18,6 +18,7 @@ import { ScrollContext } from "./contexts/ScrollContext";
 import MyIcon from "./components/MyIcon";
 import { HOME_TAB_ID } from "./scripts/config";
 import "../src/components/cstyle.css"
+import HeroBackground from "./components/HeroBackgound";
 
 function App() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -57,7 +58,9 @@ if(position=="relative"){
 
   return (
     <Box className="App">
+      <HeroBackground />
       <Flex
+      
         ref={mainBoxRef}
         direction={{ base: "column", sm: "row", lg: "row" }}
         w={{ base: "100%", sm: "100%", lg: "85%" }}

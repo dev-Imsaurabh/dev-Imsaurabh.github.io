@@ -6,18 +6,18 @@ export default function ButtonPanel(){
 
 
     return <Flex m="auto" >
-    <Button _hover={{bg:"transparent"}} _active={{bg:"transparent"}} justifyContent={"center"}  flex='1' variant='ghost' leftIcon={<MyIcon src={ANALYTICS_ICON} size={6}  />} ></Button>
-    <Button _hover={{bg:"transparent"}} _active={{bg:"transparent"}} justifyContent={"center"}  flex='1' variant='ghost' leftIcon={<MyIcon src={COMMENT_ICON} size={6}  />} >
+    <Button _hover={{bg:"transparent"}} _active={{bg:"transparent"}} style={{WebkitTapHighlightColor:"transparent"}} justifyContent={"center"}  flex='1' variant='ghost' leftIcon={<MyIcon src={ANALYTICS_ICON} size={6}  />} ></Button>
+    <Button _hover={{bg:"transparent"}} _active={{bg:"transparent"}}  style={{WebkitTapHighlightColor:"transparent"}} justifyContent={"center"}  flex='1' variant='ghost' leftIcon={<MyIcon src={COMMENT_ICON} size={6}  />} >
         
         </Button>
-        <Button  _hover={{bg:"transparent"}} _active={{bg:"transparent"}} justifyContent={"center"} flex='1' variant='ghost' leftIcon={<MyIcon src={RETWEET_ICON} size={6} />} >
+        <Button  _hover={{bg:"transparent"}} _active={{bg:"transparent"}}  style={{WebkitTapHighlightColor:"transparent"}} justifyContent={"center"}  flex='1' variant='ghost' leftIcon={<MyIcon src={RETWEET_ICON} size={6} />} >
           
         </Button>
-        <Button  _hover={{bg:"transparent"}} _active={{bg:"transparent"}} justifyContent={"center"} flex='1' variant='ghost' leftIcon={<MyIcon src={HEART_ICON
+        <Button  _hover={{bg:"transparent"}} _active={{bg:"transparent"}}  style={{WebkitTapHighlightColor:"transparent"}} justifyContent={"center"} flex='1' variant='ghost' leftIcon={<MyIcon src={HEART_ICON
         } size={6} />} >
           
         </Button>
-        <Button  _hover={{bg:"transparent"}} _active={{bg:"transparent"}} justifyContent={"center"} flex='1' variant='ghost' leftIcon={<MyIcon src={SHARE_ICON} size={6} />}>
+        <Button  _hover={{bg:"transparent"}} _active={{bg:"transparent"}}  style={{WebkitTapHighlightColor:"transparent"}} justifyContent={"center"} flex='1' variant='ghost' leftIcon={<MyIcon src={SHARE_ICON} size={6} />}>
           
         </Button>
     
