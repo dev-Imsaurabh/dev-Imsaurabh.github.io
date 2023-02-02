@@ -6,10 +6,13 @@ import {
   ABOUT_ME_TAB,
   CONTACT_ICON,
   CONTACT_TAB,
+  DOWNLOAD_ICON,
   HOME_ICON,
   HOME_TAB,
   LOGO,
   MY_RESUME,
+  MY_RESUME_PDF,
+  MY_RESUME_PDF_FILE_NAME,
   PROFILE_ICON,
   PROJECTS_TAB,
   PROJECT_ICON,
@@ -65,6 +68,15 @@ export default function SideNavbar() {
 
     
   ));
+  
+
+  function downloadFile(){
+    let link = document.createElement("a");
+    link.download = MY_RESUME_PDF_FILE_NAME;
+    link.href = MY_RESUME_PDF;
+    link.click();
+    link.remove()
+}
 
   const [toggle,setToggle] = useState("50px")
 
@@ -91,10 +103,11 @@ export default function SideNavbar() {
         fontSize={16}
         rounded={"full"}
         bg={"blue.400"}
-        rightIcon={<MyIcon src={VIEW_ICON_SVG} size={6} />}
+        rightIcon={<MyIcon src={DOWNLOAD_ICON} size={6} />}
         color={"white"}
         padding={6}
         onClick={()=>{
+          downloadFile()
           window.open(MY_RESUME)
         }}
         boxShadow={

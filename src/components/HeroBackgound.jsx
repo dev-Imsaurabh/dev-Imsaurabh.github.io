@@ -7,7 +7,7 @@ import Lottie from "react-lottie";
 import { useEffect, useRef } from "react";
 import { useState } from "react";
 import "./cstyle.css";
-
+import hero_me from "../assets/hero_me.png"
 export default function HeroBackground() {
   const [visible, setVisible] = useState(true);
   function config(url) {
@@ -36,14 +36,16 @@ export default function HeroBackground() {
     >
       {/*  */}
 
-      <Lottie
+      {/* <Lottie
         style={{ position: "fixed", top: -20, zIndex: 200 }}
         options={config(
           "https://assets7.lottiefiles.com/packages/lf20_96bovdur.json"
         )}
         height={400}
         width={400}
-      />
+      /> */}
+
+      <Image style={{ position: "fixed", top: -20, zIndex: 200 }} src={hero_me}></Image>
       <Image
         textShadow={
           "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"

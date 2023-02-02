@@ -33,6 +33,29 @@
       "projectType":"Individual",
       "preview":"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/preview/zs-preview.png?raw=true",
       "video": "https://drive.google.com/file/d/1o511dbF1EK6Ux3HIv1PgLPvX_rVxSlWy/view?usp=share_link"
+    },{
+      "name": "TATA CLiQ - Clone",
+      "desc": "At CLiQ Mart, everything you see is Hand-piQed and 100% AuthentiQ. Begin your journey online with one of the fastest growing, e-commerce brands in the country and have a seamless online shopping experience. Immerse yourself in the joy of browsing through the best Indian and international brands in fashion, luxury, electronics and jewellery.",
+      "image": [
+        "https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(2).png?raw=true",
+        "https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(3).png?raw=true"
+        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(4).png?raw=true"
+        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(5).png?raw=true",
+        "https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(6).png?raw=true"
+        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(7).png?raw=true"
+        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(9).png?raw=true"
+        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(10).png?raw=true"
+        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(11).png?raw=true"
+        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(12).png?raw=true"
+        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(13).png?raw=true"
+        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(14).png?raw=true"
+      ],
+      "techStack": ["React","Redux","Chakra UI","Json-Server"],
+      "githubLink": "https://github.com/dev-Imsaurabh/third-ice-7307",
+      "deployedLink": "https://tatacliq-ruby.vercel.app/",
+      "projectType":"Collaborative",
+      "preview":"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/preview/cq-preview.png?raw=true",
+      "video": "https://drive.google.com/file/d/1d4a5IOsdu3tcS0PCn8NKePoESJgj8Irk/view?usp=share_link"
     },
     {
       "name": "Picoholic-Photo Editor-crop dp",

@@ -29,6 +29,14 @@ import { ScrollContext } from '../contexts/ScrollContext';
 
 
 export default function Nav() {
+  
+  function downloadFile(){
+    let link = document.createElement("a");
+    link.download = MY_RESUME_PDF_FILE_NAME;
+    link.href = MY_RESUME_PDF;
+    link.click();
+    link.remove()
+}
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const {handlePage} = useContext(ScrollContext)
@@ -36,6 +44,7 @@ export default function Nav() {
   const navState = [HOME_TAB_ID,ABOUT_ME_TAB_ID,SKILLS_TAB_ID,PROJECTS_TAB_ID,CONTACT_TAB_ID,RESUME_TAB_ID]
   let navItems = navbars.map((el,i)=> <Wrap onClick={()=>{
     if(i==navbars.length-1){
+      downloadFile()
       window.open(MY_RESUME)
     }else{
       handlePage(navState[i])

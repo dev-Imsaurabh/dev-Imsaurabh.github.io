@@ -5,10 +5,11 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react';
 import ScrollContextProvider from './contexts/ScrollContext';
-import HeroBackground from './components/HeroBackgound';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+  
   <ChakraProvider>
     <ScrollContextProvider>
       <App />   

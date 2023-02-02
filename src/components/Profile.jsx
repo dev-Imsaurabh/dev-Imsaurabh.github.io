@@ -109,7 +109,10 @@ useEffect(()=>{
              rounded={'full'}
                 bg={'blue.400'}
                 color={'white'}
-                onClick={()=>downloadFile()}
+                onClick={()=>{
+                window.open(MY_RESUME)
+                  downloadFile()
+                }}
                 rightIcon={<MyIcon src={DOWNLOAD_ICON} size={4}/>}
                 boxShadow={
                   '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
