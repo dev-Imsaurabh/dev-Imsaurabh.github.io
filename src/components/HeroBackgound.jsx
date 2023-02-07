@@ -7,7 +7,8 @@ import Lottie from "react-lottie";
 import { useEffect, useRef } from "react";
 import { useState } from "react";
 import "./cstyle.css";
-import hero_me from "../assets/hero_me.png"
+import profile_pic_transparent from "../assets/profile_pic_transparent.png"
+import { MY_PIC } from "../scripts/config";
 export default function HeroBackground() {
   const [visible, setVisible] = useState(true);
   function config(url) {
@@ -23,6 +24,9 @@ export default function HeroBackground() {
 
   return (
     <Grid
+    onClick={()=>{
+
+    }}
       // overflow={"hidden"}
       placeItems={"center"}
       position={"absolute"}
@@ -32,6 +36,7 @@ export default function HeroBackground() {
       visibility={visible ? "visible" : "hidden"}
       style={{}}
       width={"100%"}
+      
       height={"100vh"}
     >
       {/*  */}
@@ -45,7 +50,7 @@ export default function HeroBackground() {
         width={400}
       /> */}
 
-      <Image style={{ position: "fixed", top: -20, zIndex: 200 }} src={hero_me}></Image>
+      <Image borderRadius={"50%"} w={"300px"} style={{ position: "fixed", top: 30, zIndex: 200 }} src={profile_pic_transparent}></Image>
       <Image
         textShadow={
           "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000"

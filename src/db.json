@@ -3,58 +3,92 @@
     {
       "name": "OverStock.com - Clone",
       "desc": "Overstock.com is a discount online shopping retailer. It offers a range of products including furniture, rugs, bedding, Kitchen appliances, cookware, home decor, housewares, outdoor decor products, garden and yard care products, lighting, gift items, kids' furniture, Kids' outdoor play products, kids' toys, exercising equipment and sporting goods.",
-      "image": ["https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock1.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock2.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock3.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock4.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock5.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock6.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock7.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock8.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/OverStock/overstock9.png?raw=true"],
+      "image": [
+        "https://drive.google.com/uc?export=view&id=15zdFoSJeu0e6TQV-B4E7qMxo70Mjx7ja",
+        "https://drive.google.com/uc?export=view&id=1Cv2Ckqf-Ec70QV9DSgzYs376uO3aVGlq",
+        "https://drive.google.com/uc?export=view&id=1WyBkqaG6cypgDqiPt5fOLR9AAPgtHh00",
+        "https://drive.google.com/uc?export=view&id=1wwZfJ8tFRiBzT5HDPP07YQmOrSJqA4DY",
+        "https://drive.google.com/uc?export=view&id=1nPoR7dKiFZtCWf-aHUJbe6DMWOIipfMF",
+        "https://drive.google.com/uc?export=view&id=1KTGO_4yFD0CXbM2nL6PcS3_PIb0WOQuy",
+        "https://drive.google.com/uc?export=view&id=11jQ_aQY3VaJYIITkBrGWSQTxXM6c3m3p",
+        "https://drive.google.com/uc?export=view&id=1jern5h-8LB73LN1Nbw24uGcV1ClKk4Uz",
+        "https://drive.google.com/uc?export=view&id=1lxec6fh-0LZcI62XJQ_-AA5RozCv1A_u"
+        
+    ],
       "techStack": ["HTML","CSS","JavaScript","Local-Storage"],
-      "githubLink": "https://github.com/dev-Imsaurabh/light-deer-8425",
+      "githubLink": "https://github.com/dev-Imsaurabh/OverStock-clone",
       "deployedLink": "https://overstock-light-deer-8425.netlify.app/",
       "projectType":"Individual",
-      "preview":"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/preview/os-preview.png?raw=true",
+      "preview":"https://drive.google.com/uc?export=view&id=1Qd8IU8zpwZTny9HeZKxTwTBA64ZQtdjg",
       "video": "https://drive.google.com/file/d/1aNK9sBbtLSloFaQTXB0ge6xMnPFCs7E-/view?usp=share_link"
     },
     {
       "name": "DeskTime.com - Clone",
       "desc": "A time tracker with additional workforce management features that will help you develop a high-performing team that smashes goals every time.",
-      "image": ["https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/TimeAlways/ta1.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/TimeAlways/ta2.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/TimeAlways/ta3.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/TimeAlways/ta4.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/TimeAlways/ta1.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/TimeAlways/t6.png?raw=true"],
+      "image": [
+        "https://drive.google.com/uc?export=view&id=1Gc6WmNLXvRM1jX3viQjiiksm6tiQDj0P",
+        "https://drive.google.com/uc?export=view&id=11XySu5nPxyN5vj3yJe2kefKdPzhVBlEu",
+        "https://drive.google.com/uc?export=view&id=1JDbNTowtTWCnriUvxCLdVD-hFA0k879K",
+        "https://drive.google.com/uc?export=view&id=1MQ62hsgmc9BXFF9j_xVWTqZX9SBbkqUX",
+        "https://drive.google.com/uc?export=view&id=19h1lzwsaFkkFWTGk69uuyDiHTmH9b07W",
+        "https://drive.google.com/uc?export=view&id=1MH4BNT0wAxcS9aPODCatChQjDImJDp__"
+      ],
       "techStack": ["HTML","CSS","JavaScript","Local-Storage","Json-Server","Render"],
-      "githubLink": "https://github.com/palabhi017/terrific-language-9890",
+      "githubLink": "https://github.com/dev-Imsaurabh/DeskTime-clone",
       "deployedLink": "https://time-always.netlify.app/",
       "video": "https://drive.google.com/file/d/17zJHI-NEe7sYJqN_7XRH1jzqR6-6s32A/view?usp=share_link",
-      "preview":"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/preview/ta-preview.png?raw=true",
+      "preview":"https://drive.google.com/uc?export=view&id=1B1vL0alHE8whgYP7sOYJoBs5MtqY54RF"      ,
       "projectType":"Collaborative"
 
     },
     {
       "name": "Shop.com - Clone",
       "desc": "ZipShop.com Marketplace offers great deals on clothes, beauty, health and nutrition, shoes, electronics, and more from over 1500 stores with one easy checkout.",
-      "image": ["https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s1.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s2.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s3.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s4.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s5.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s6.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s7.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s8.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s9.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s10.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s11.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s12.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s14.png?raw=true","https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/Shop-Com/s15.png?raw=true"],
+      "image": [
+        "https://drive.google.com/uc?export=view&id=1d35HiGCAcoAW-XqQPWTaibyjZl1Ea3Xz",
+        "https://drive.google.com/uc?export=view&id=1IjPCeuXpWoL8DWOo8gR1NTqwzIRJ2IpY",
+        "https://drive.google.com/uc?export=view&id=1pF_ovsd3B6cZ_UdIOeouJNvYwMyBsb-b",
+        "https://drive.google.com/uc?export=view&id=15v5e2qEgROqNNoQM1CzDd89JdiZiiY-7",
+        "https://drive.google.com/uc?export=view&id=1TvF9lS1hGvZOsEx3-AVJ_aMWnOtlKoxz",
+        "https://drive.google.com/uc?export=view&id=1HUk2KGUhns8OqpnIvK7rXw70JaHjHK5P",
+        "https://drive.google.com/uc?export=view&id=1Sag4Bz3oi7gm00Vd2Bvid8arOOgRjjkm",
+        "https://drive.google.com/uc?export=view&id=1lje-GJmBDneR8N6g-KDm2Gc3tdJHV96U",
+        "https://drive.google.com/uc?export=view&id=1Wm5EXcbNFQUQVWbGfUg7O2bQCNXuXl7h",
+        "https://drive.google.com/uc?export=view&id=12RHNTbKRHjHmSH_1D_DybDRXid4JBLy1",
+        "https://drive.google.com/uc?export=view&id=1NCVpE3_sIfbfE7vJbNsma5ppz3bd9ONg",
+        "https://drive.google.com/uc?export=view&id=1SPR5SuAZnYJkZssjnCsVs6IFoN5RggSy",
+        "https://drive.google.com/uc?export=view&id=1RDVeUnkjdMvF6Kr9v9kFAISK09aS_1eC",
+        "https://drive.google.com/uc?export=view&id=1SZk3v7Jrk_DzyivvzpR58ONN4A_TQx1O"
+      ],
       "techStack": ["React","JSX","CSS","Chakra UI","Json-Server"],
-      "githubLink": "https://github.com/dev-Imsaurabh/deep-scarecrow-1437",
+      "githubLink": "https://github.com/dev-Imsaurabh/SHOP.com-clone",
       "deployedLink": "https://shop-com-nine.vercel.app/",
       "projectType":"Individual",
-      "preview":"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/preview/zs-preview.png?raw=true",
+      "preview":"https://drive.google.com/uc?export=view&id=1vzz89qQZhUgHy4YgZTC9qea0VChlExyi",  
       "video": "https://drive.google.com/file/d/1o511dbF1EK6Ux3HIv1PgLPvX_rVxSlWy/view?usp=share_link"
     },{
       "name": "TATA CLiQ - Clone",
       "desc": "At CLiQ Mart, everything you see is Hand-piQed and 100% AuthentiQ. Begin your journey online with one of the fastest growing, e-commerce brands in the country and have a seamless online shopping experience. Immerse yourself in the joy of browsing through the best Indian and international brands in fashion, luxury, electronics and jewellery.",
       "image": [
-        "https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(2).png?raw=true",
-        "https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(3).png?raw=true"
-        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(4).png?raw=true"
-        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(5).png?raw=true",
-        "https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(6).png?raw=true"
-        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(7).png?raw=true"
-        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(9).png?raw=true"
-        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(10).png?raw=true"
-        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(11).png?raw=true"
-        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(12).png?raw=true"
-        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(13).png?raw=true"
-        ,"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/cliqmart/mobile%20(14).png?raw=true"
+        "https://drive.google.com/uc?export=view&id=1v0Bo-1q2zLVLG8pEUHJeKOiqtPs06y_2",
+        "https://drive.google.com/uc?export=view&id=1v0Bo-1q2zLVLG8pEUHJeKOiqtPs06y_2",
+        "https://drive.google.com/uc?export=view&id=1BVnW5ytMxtkRH9nqVbyFJBPRP_AaRgtM",
+        "https://drive.google.com/uc?export=view&id=1I4OmEODRguy8uLxAMN-CjMoB6rImoAiH",
+        "https://drive.google.com/uc?export=view&id=1LfQHRgVVVu_noNJdEfEKFU-mCZq6z7RB",
+        "https://drive.google.com/uc?export=view&id=1NWNoDjI_277BXJAA9iuPSaYrh0mFshpI",
+        "https://drive.google.com/uc?export=view&id=15No86G7aXFmYpdyZw6Xf6W4QVByVqjI9",
+        "https://drive.google.com/uc?export=view&id=1HMvx1m3RIvx6vsPb_tWpz5HGayze2oWu",
+        "https://drive.google.com/uc?export=view&id=1PQn5wRCJLc1-I7y_NsO3UCVsaeSUSim9",
+        "https://drive.google.com/uc?export=view&id=1f6ijeeFyL-CkTdfTY1N7hyoXYd1jeVL4",
+        "https://drive.google.com/uc?export=view&id=17dAsUfEsMORj-p3xLHWOHNpkI06wdt8B",
+        "https://drive.google.com/uc?export=view&id=1MUKqI2F2rG3OBXt7NxqUBHhO5KtqF0RV",
+        "https://drive.google.com/uc?export=view&id=1O9miwYVW6xJsmMIWocfwA7_QoEr33LYk"
       ],
       "techStack": ["React","Redux","Chakra UI","Json-Server"],
-      "githubLink": "https://github.com/dev-Imsaurabh/third-ice-7307",
+      "githubLink": "https://github.com/dev-Imsaurabh/TATA-CLiQ-clone",
       "deployedLink": "https://tatacliq-ruby.vercel.app/",
       "projectType":"Collaborative",
-      "preview":"https://github.com/dev-Imsaurabh/image-hosting-repo/blob/master/preview/cq-preview.png?raw=true",
+      "preview": "https://drive.google.com/uc?export=view&id=1Pnz7bnnyRzu-HO2l_XG_Vm8G2sAY_FcA",
       "video": "https://drive.google.com/file/d/1d4a5IOsdu3tcS0PCn8NKePoESJgj8Irk/view?usp=share_link"
     },
     {

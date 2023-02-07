@@ -68,7 +68,7 @@ let allSkill = skillList.map((el)=><SkillCard {...el}/>)
     <CardBody>
       <ResizeableText text ={SKILL_CAPTION}/>
     </CardBody>
-    <Grid m="auto"  borderRadius={20} width={"90%"} style={{boxShadow:"0px 3px 6px 6px rgba(180,234,255,0.16),0px 3px 6px 0px rgba(0,0,0,0.23)"}} templateColumns={{base:"repeat(4,1fr)",lg:"repeat(5,1fr)"}} gap={2} padding={2}>
+    <Grid m="auto"  borderRadius={20} width={"90%"} style={{boxShadow:"0px 3px 6px 6px rgba(180,234,255,0.16),0px 3px 6px 0px rgba(0,0,0,0.23)"}} templateColumns={{base:"repeat(3,1fr)",lg:"repeat(4,1fr)"}} gap={2} padding={2}>
         {allSkill}
 
     </Grid>

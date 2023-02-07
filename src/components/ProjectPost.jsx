@@ -54,7 +54,7 @@ export default function ProjectPost({
         borderBottom="0.4px solid gray"
       >
         <CardHeader>
-          <Flex spacing="4">
+          <Flex display={"none"} spacing="4">
             <Flex flex="1" gap="4" flexWrap="wrap">
               <Avatar name={MY_NAME} src={LOGO} border="1px solid white" />
 
@@ -78,18 +78,21 @@ export default function ProjectPost({
           </Flex>
 
           <Stack mt={"8px"} alignItems={"flex-start"}>
+            <Flex alignItems={"center"} gap={0}>
             <Heading
-              size={"md"}
+              size={"lg"}
               cursor={"pointer"}
+              textAlign={"left"}
               onClick={() => window.open(deployedLink)}
             >
               {name}
-              <span>
-                <Badge colorScheme={"blue"} ml="8px">
+              
+            </Heading>
+            <Badge colorScheme={"blue"} ml="8px">
                   {projectType}
                 </Badge>
-              </span>
-            </Heading>
+            </Flex>
+           
           </Stack>
         </CardHeader>
         <CardBody mt={"-32px"}>
@@ -139,7 +142,7 @@ export default function ProjectPost({
             variant="ghost"
             leftIcon={<MyIcon src={WEB_ICON} size={4} rounded={true} />}
           >
-            Live
+            Deployed
           </Button>
           <Button
             onClick={() => {

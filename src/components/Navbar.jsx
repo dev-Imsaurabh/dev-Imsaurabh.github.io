@@ -18,6 +18,8 @@ import {
   useColorMode,
   Center,
   Wrap,
+  VStack,
+  Text,
 } from '@chakra-ui/react';
 import { MoonIcon, SunIcon } from '@chakra-ui/icons';
 import logo from "../assets/SK.svg"
@@ -42,7 +44,7 @@ export default function Nav() {
   const {handlePage} = useContext(ScrollContext)
   const navbars = [HOME_ICON,PROFILE_ICON,SKILL_ICON,PROJECT_ICON,CONTACT_ICON,RESUME_ICON]
   const navState = [HOME_TAB_ID,ABOUT_ME_TAB_ID,SKILLS_TAB_ID,PROJECTS_TAB_ID,CONTACT_TAB_ID,RESUME_TAB_ID]
-  let navItems = navbars.map((el,i)=> <Wrap onClick={()=>{
+  let navItems = navbars.map((el,i)=> <VStack  onClick={()=>{
     if(i==navbars.length-1){
       downloadFile()
       window.open(MY_RESUME)
@@ -51,7 +53,9 @@ export default function Nav() {
 
     }
   }}><MyIcon src={el} size={6}>
-  </MyIcon></Wrap>)
+  </MyIcon>
+  <Text fontSize={10}>{navState[i].toUpperCase()}</Text>
+  </VStack>)
 
 // function downloadFile(url, fileName) {
 //   fetch(url, { method: 'get', mode: 'no-cors', referrerPolicy: 'no-referrer' })
@@ -69,7 +73,7 @@ export default function Nav() {
 
   return (
     <>
-      <Flex padding={2}  width={"90%"}  borderRadius={20} border={"0.5px solid white"} justifyContent={"center"} display={{base:"block",sm:'block',lg:"none"}} alignItems={"center"} transform="translate(-50%,-50%)" position={"fixed"} bottom={"-5"} left="50%" bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
+      <Flex  width={"90%"}  borderRadius={20} border={"0.5px solid white"} justifyContent={"center"} display={{base:"block",sm:'block',lg:"none"}} alignItems={"center"} transform="translate(-50%,-50%)" position={"fixed"} bottom={"-5"} left="50%" bg={useColorModeValue('gray.100', 'gray.900')} px={4}>
         
 
           <Flex alignItems={'center'} justify={"space-between"} gap={2} padding={4}>

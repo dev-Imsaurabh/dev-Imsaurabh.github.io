@@ -79,7 +79,7 @@ export const REDUX_ICON="https://d33wubrfki0l68.cloudfront.net/0834d0215db51e915
 export const HTML_ICON="https://cdn-icons-png.flaticon.com/512/174/174854.png"
 export const CSS_ICON="https://cdn-icons-png.flaticon.com/512/732/732190.png"
 export const JAVASCRIPT_ICON="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
-export const JAVA_ICON="https://raw.githubusercontent.com/github/explore/5b3600551e122a3277c2c5368af2ad5725ffa9a1/topics/java/java.png"
+export const JAVA_ICON="https://images.freeimages.com/fic/images/icons/2796/metro_uinvert_dock/256/java.png"
 export const FIREBASE_ICON="https://avatars.githubusercontent.com/u/1335026?s=200&v=4"
 export const TYPESCRIPT_ICON="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/1200px-Typescript_logo_2020.svg.png"
 export const CHAKRA_UI_ICON="https://avatars.githubusercontent.com/u/54212428?s=200&v=4"
@@ -92,7 +92,7 @@ export const NETLIFY_ICON="https://avatars.githubusercontent.com/u/7892489?s=200
 export const RENDER_ICON="https://avatars.githubusercontent.com/u/36424661?s=200&v=4"
 
 //FramewrokIcons
-export const ANDROID_STUDIO_ICON="https://raw.githubusercontent.com/github/explore/44926f43f6a0d183b5965bebd1e77069ab00c26a/topics/android-studio/android-studio.png"
+export const ANDROID_STUDIO_ICON="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Android_Studio_Icon_3.6.svg/768px-Android_Studio_Icon_3.6.svg.png"
 export const VSCODE_ICON="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/768px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519"
 export const SUBLIME_ICON="https://www.sublimehq.com/images/sublime_text.png"
 export const CODE_SAND_ICON="https://avatars.githubusercontent.com/u/32880324?s=200&v=4"

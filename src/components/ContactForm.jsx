@@ -26,7 +26,8 @@ import {
   } from 'react-icons/md';
   import { BsGithub, BsDiscord, BsPerson } from 'react-icons/bs';
 import TabHeading from './TabHeading';
-import { CONTACT_HEADLINE, CONTACT_SUBLINE, FORMSPREE_API } from '../scripts/config';
+import { CONTACT_HEADLINE, CONTACT_SUBLINE, FORMSPREE_API, PHONE_ICON } from '../scripts/config';
+import MyIcon from './MyIcon';
 
 export default function ContactForm(){
 
@@ -36,6 +37,7 @@ export default function ContactForm(){
         <form width={"100%"} action={FORMSPREE_API} method='POST'>
         <VStack width={"100%"} padding={4} spacing={5}>
             <TabHeading content={CONTACT_HEADLINE} size={"lg"} />
+            <Button bg={"transparent"} _hover={{bg:"transparent"}} _active={{bg:"transparent"}} leftIcon={<MyIcon src={PHONE_ICON} size={4}></MyIcon>}>+91 6393567935</Button>
             <TabHeading content={CONTACT_SUBLINE} size={"sm"} />
           <FormControl id="name">
             <FormLabel>Your Name</FormLabel>
