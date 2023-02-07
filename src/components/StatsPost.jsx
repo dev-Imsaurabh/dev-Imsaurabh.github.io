@@ -39,7 +39,7 @@ export default function StatsPost(){
     <Grid m="auto"  borderRadius={20} width={"90%"} style={{boxShadow:"0px 3px 6px 6px rgba(180,234,255,0.16),0px 3px 6px 0px rgba(0,0,0,0.23)"}} templateColumns={{base:"repeat(2,1fr)",sm:"repeat(1,1fr)",lg:"repeat(2,1fr)"}} gap={2} padding={2}>
 
     <StatsCard title={'Coding'} stat={'1200+ hrs'} />
-    <StatsCard title={'DSA'} stat={'500+ Que'} />
+    <StatsCard title={'DSA'} stat={'600+ Que'} />
     <StatsCard title={'Soft Skills'} stat={'100+ hrs'} />
     <StatsCard title={'Git Commits'} stat={'300+'} />
     <StatsCard title={'Collaborative Projects'} stat={'2+'} />
