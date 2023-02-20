@@ -7,29 +7,24 @@ import ButtonPanel from './ButtonPanel'
 import ResizeableText from './ResizableText'
 
 
-export default function SkillPost(){
+export default function ToolsPost(){
 
-    const skillList=[
-    {name:"Mongo DB",link:MONGO_ICON},
-    {name:"Express JS",link:EXPRESS_ICON},
-    {name:"React",link:REACT_ICON},
-    {name:"Node JS",link:NODE_ICON},
-    {name:"Chakra UI",link:CHAKRA_UI_ICON},
-    {name:"TypeSrcipt",link:TYPESCRIPT_ICON},
-    {name:"Redux",link:REDUX_ICON},
-    {name:"HTML",link:HTML_ICON},
-    {name:"CSS",link:CSS_ICON},
-    {name:"JavaScript",link:JAVASCRIPT_ICON},
-    {name:"Java",link:JAVA_ICON},
-    {name:"Kotlin",link:KOTLIN_ICON},
-    {name:"php",link:PHP_ICON},
-    {name:"MySQL DB",link:MYSQL_ICON},
-    {name:"Firebase",link:FIREBASE_ICON},
+    const toolsList=[
+    {name:"Git",link:GIT_ICON},
+    {name:"Vercel",link:VERCEL_ICON},
+    {name:"Netlify",link:NETLIFY_ICON},
+    {name:"Render",link:RENDER_ICON},
+    {name:"Android Studio",link:ANDROID_STUDIO_ICON},
+    {name:"VS Code",link:VSCODE_ICON},
+    {name:"Sublime",link:SUBLIME_ICON},
+    {name:"CodeSandBox",link:CODE_SAND_ICON},
+    {name:"CodePen",link:CODE_PEN},
+    {name:"Replit",link:REPLIT_ICON},
 
 ]
 
 
-let allSkill = skillList.map((el)=><SkillCard {...el}/>)
+let allSkill = toolsList.map((el)=><SkillCard {...el}/>)
 
 
     return <Box  _hover={{bg:"#002D3748"}}>
@@ -56,9 +51,9 @@ let allSkill = skillList.map((el)=><SkillCard {...el}/>)
       </Flex>
     </CardHeader>
     <CardBody>
-      <ResizeableText text ={SKILL_CAPTION}/>
+      <ResizeableText text ={"I have unlocked my potential with these ultimate tool set for mastering new skills!"}/>
     </CardBody>
-    <Grid m="auto"  borderRadius={20} width={"90%"} placeItems={"center"} style={{boxShadow:"0px 3px 6px 6px rgba(180,234,255,0.16),0px 3px 6px 0px rgba(0,0,0,0.23)"}} templateColumns={{base:"repeat(3,1fr)",lg:"repeat(4,1fr)"}} gap={2} padding={2}>
+    <Grid m="auto"  borderRadius={20} width={"90%"} style={{boxShadow:"0px 3px 6px 6px rgba(180,234,255,0.16),0px 3px 6px 0px rgba(0,0,0,0.23)"}} templateColumns={{base:"repeat(3,1fr)",lg:"repeat(4,1fr)"}} gap={2} padding={2}>
         {allSkill}
 
     </Grid>

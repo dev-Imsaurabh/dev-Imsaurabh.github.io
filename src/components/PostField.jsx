@@ -11,6 +11,7 @@ import { BOTTOM_LINE, CONTACT_TAB_ID, HOME_TAB_ID, PROJECTS_TAB_ID, SKILLS_TAB_I
 import ConatctButtonPanel from "./ContactButtonPanel";
 import ContactForm from "./ContactForm";
 import StatsPost from "./StatsPost";
+import ToolsPost from "./ToolsPost";
 
 export default function PostField(){
 
@@ -50,8 +51,11 @@ export default function PostField(){
     return <Flex ref={postFieldRef} w={{base:"100%",lg:"45%"}} overflow="scroll" className="postField"  direction="column" borderRight={{base:"",lg:"0.4px solid gray",sm:"0.4px solid gray"}} borderLeft={{base:"",lg:"0.4px solid gray",sm:"0.2px solid gray"}}>
 
         <Profile/>
-        <Stack ref={skillsRef} alignItems={"flex-start"} margin="8px"><TabHeading content={"Technical Skills"}  size={"2xl"}/></Stack>
+        <Stack ref={skillsRef} alignItems={"flex-start"} margin="8px"><TabHeading content={"Tech Stacks"}  size={"2xl"}/></Stack>
         <SkillPost />
+        <Stack ref={skillsRef} alignItems={"flex-start"} margin="8px"><TabHeading content={"Tools Section"}  size={"2xl"}/></Stack>
+        <ToolsPost />
+
         <Stack ref={projectRef} alignItems={"flex-start"} margin="8px"><TabHeading  content={"Projects"}  size={"2xl"}/></Stack>
         {projects}       
         <VStack position={"fixed"} display={{base:"block",sm:'block',lg:"none"}} zIndex={100}  right={0} bottom={100} >
