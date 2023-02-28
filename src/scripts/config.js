@@ -118,7 +118,7 @@ ${MY_POSITION} with a knack for creating visually appealing and user-friendly we
 
 export const MY_RESUME="https://drive.google.com/file/d/1vhOrWvGqdCA9NHk8qL77O99A3C2qZnf7/view"
 export const MY_RESUME_PDF=resumePdf
-export const MY_RESUME_PDF_FILE_NAME="Saurabh_Kumar_Resume.pdf"
+export const MY_RESUME_PDF_FILE_NAME="fw21_1003_Saurabh_Kumar_Resume.pdf"
 export const MY_COUNTRY_CODE="+91"
 export const MY_PHONENUMBER="6393567935"
 export const MY_EMAIL="sau4478@gmail.com"
