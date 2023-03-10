@@ -1,6 +1,24 @@
 {
   "projects": [
     {
+      "name": "Covid Blaster: Multiplayer Game",
+      "desc": "Covid Blaster is an exciting space game that puts you in control of a powerful spaceship as you blast your way through waves of deadly corona viruses.",
+      "image": [
+        "https://res.cloudinary.com/ducgyycpy/image/upload/v1677952472/Covid-Blaster/mobile_28_ypu95v.png",
+        "https://res.cloudinary.com/ducgyycpy/image/upload/v1677952472/Covid-Blaster/mobile_27_zss1fb.png",
+        "https://res.cloudinary.com/ducgyycpy/image/upload/v1677952471/Covid-Blaster/mobile_26_xkpwzs.png",
+        "https://res.cloudinary.com/ducgyycpy/image/upload/v1677952655/Covid-Blaster/mobile_29_mrwim9.png",
+        "https://res.cloudinary.com/ducgyycpy/image/upload/v1677952471/Covid-Blaster/mobile_25_jchddo.png"
+        
+    ],
+      "techStack": ["React","TypeScript","Mongo DB","Express","Node.js","Chakra UI","socket.io"],
+      "githubLink": "https://github.com/dev-Imsaurabh/covid-blaster",
+      "deployedLink": "https://covidblaster.vercel.app/",
+      "projectType":"Hackathon",
+      "preview":"https://res.cloudinary.com/ducgyycpy/image/upload/v1678429339/I_created_Library_to_help_you_in_11_um4dh6.png",
+      "video": "https://drive.google.com/file/d/1rg6C-2N1FLPmbmGV6wWQIPHCXp9ODg5e/view?usp=share_link"
+    },
+    {
       "name": "Styluxe",
       "desc": "Styluxe is an e-commerce website for online retailing of men's and women's garments and accessories and this is clone of yepme website",
       "image": [
@@ -17,7 +35,7 @@
         "https://res.cloudinary.com/ducgyycpy/image/upload/v1677484126/samples/mobile_24_hy21vq.png"
         
     ],
-      "techStack": ["React","Mongo DB","Express","Node.js","Chakra UI","JWT","Bcrypt","Cyclic"],
+      "techStack": ["React","Mongo DB","Express","Node.js","Chakra UI","JWT","Bcrypt"],
       "githubLink": "https://github.com/dev-Imsaurabh/Styluxe",
       "deployedLink": "https://styluxe.vercel.app/",
       "projectType":"Collaborative",

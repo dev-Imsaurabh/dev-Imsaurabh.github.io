@@ -21,9 +21,9 @@ import "../src/components/cstyle.css"
 import HeroBackground from "./components/HeroBackgound";
 
 function App() {
-  const { colorMode, toggleColorMode } = useColorMode();
   const {page,handlePage}=useContext(ScrollContext)
   const mainBoxRef = useRef(null);
+  const { colorMode, toggleColorMode } = useColorMode();
 
   // useEffect(()=>{
   //   if(page==HOME_TAB_ID){
